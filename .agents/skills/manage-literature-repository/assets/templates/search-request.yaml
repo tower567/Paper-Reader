@@ -1,0 +1,17 @@
+id: "{{REQUEST_ID}}"
+created_at: "{{DATE}}"
+research_question: ""
+objective: "literature-survey"
+scope:
+  task: ""
+  setting: ""
+  domain: ""
+  time_range: ""
+known_seed_papers: []
+inclusion_criteria: []
+exclusion_criteria: []
+preferences:
+  code_available: false
+  venues: []
+output_path: "inbox/candidates/{{REQUEST_ID}}.yaml"
+

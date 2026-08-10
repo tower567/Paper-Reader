@@ -1,0 +1,21 @@
+request_id: ""
+generated_at: ""
+search_angles: []
+candidates:
+  - title: ""
+    authors: []
+    year: null
+    identifiers:
+      doi: ""
+      arxiv: ""
+    publication:
+      venue: ""
+      status: "unknown"
+    source_url: ""
+    code_url: ""
+    relevance_reason: ""
+    likely_roles: []
+    search_angle: ""
+    confidence: "low"
+    verification_notes: ""
+

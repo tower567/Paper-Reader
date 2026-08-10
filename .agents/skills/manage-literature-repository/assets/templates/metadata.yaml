@@ -1,0 +1,49 @@
+id: "{{PAPER_ID}}"
+title: "{{TITLE}}"
+title_zh: "{{TITLE_ZH}}"
+authors: []
+year: {{YEAR}}
+identifiers:
+  doi: "{{DOI}}"
+  arxiv: "{{ARXIV}}"
+  source_url: "{{SOURCE_URL}}"
+publication:
+  venue: ""
+  type: ""
+  status: "unknown"
+research:
+  domains: []
+  topics: []
+  task: ""
+  method_family: ""
+artifacts:
+  pdf: "original.pdf"
+  translation: "translation.zh.md"
+  notes: "notes.md"
+  source: "source.md"
+  source_manifest: "source-sections/manifest.yaml"
+  parse: "parse.yaml"
+  reading_plan: "reading-plan.yaml"
+  reading_pack: "reading-pack.md"
+  code_url: ""
+workflow:
+  status: "{{STATUS}}"
+  discovered_at: "{{DATE}}"
+  translated_at: ""
+  reviewed_at: ""
+  verified_at: ""
+  reading_mode: "{{READING_MODE}}"
+  time_budget_minutes: {{TIME_BUDGET_MINUTES}}
+  translation_scope: "structured-summary"
+  source_required: true
+quality:
+  relevance: null
+  source_verified: false
+  evidence_verified: false
+  translation_verified: false
+  reproducibility: "unknown"
+  verification_level: "{{VERIFICATION_LEVEL}}"
+provenance:
+  pdf_sha256: "{{PDF_SHA256}}"
+  discovered_by: ""
+  last_updated: "{{DATE}}"

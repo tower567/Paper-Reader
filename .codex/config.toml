@@ -1,0 +1,16 @@
+[agents]
+max_threads = 4
+max_depth = 1
+
+[mcp_servers.arxiv]
+command = "micromamba"
+args = [
+  "run",
+  "-n",
+  "paper-reader",
+  "arxiv-mcp-server",
+  "--storage-path",
+  ".cache/arxiv",
+]
+startup_timeout_sec = 30
+tool_timeout_sec = 120

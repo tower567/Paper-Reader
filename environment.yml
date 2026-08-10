@@ -1,0 +1,12 @@
+name: paper-reader
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pyyaml>=6
+  - requests>=2.32
+  - pypdf>=5
+  - pytest>=8
+  - pip:
+      - "arxiv-mcp-server[pdf]==0.6.2"
