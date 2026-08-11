@@ -87,6 +87,68 @@ def test_source_quality_accepts_core_parent_with_subsection_body() -> None:
     assert result.status == "passed"
 
 
+def test_source_quality_ignores_appendix_and_long_example_headings() -> None:
+    markdown = (
+        "# Paper\n\n"
+        + "Abstract content. " * 100
+        + "\n\n## 1 Method\n\n"
+        + "Method content. " * 100
+        + "\n\n## B Experiment Details\n\n"
+        + "\n\n## B. Details for Experiment Settings\n\n"
+        + "\n\n## B Method Details\n\n"
+        + "\n\n## E Extended Results\n\n"
+        + "\n\n## E. Evaluation Metrics\n\n"
+        + "\n\n## D Benchmark Specifications and Evaluation Protocols\n\n"
+        + "\n\n## shopping: search and sort Given that you are on the Amazon search "
+        + "results page, this workflow searches for a product and sorts the results "
+        + "using a sequence of interface actions that is represented as an example.\n\n"
+        + "\n\n## 6 Conclusion\n\n"
+        + "Conclusion content. " * 100
+    )
+    result = evaluate_source(markdown, page_count=5)
+    assert result.status == "passed"
+
+
+def test_source_quality_ignores_lettered_core_heading_after_references() -> None:
+    markdown = (
+        "# Paper\n\n"
+        + "Abstract content. " * 100
+        + "\n\n## 1 Method\n\n"
+        + "Method content. " * 100
+        + "\n\n## References\n\n"
+        + "Reference content. " * 100
+        + "\n\n## A Method\n\n"
+    )
+    result = evaluate_source(markdown, page_count=5)
+    assert result.status == "passed"
+
+
+def test_source_quality_checks_lettered_core_heading_before_references() -> None:
+    markdown = (
+        "# Paper\n\n"
+        + "Abstract content. " * 100
+        + "\n\n## A Method\n\n"
+        + "\n\n## References\n\n"
+        + "Reference content. " * 100
+    )
+    result = evaluate_source(markdown, page_count=5)
+    assert result.status == "warning"
+    assert "core section has too little body text: A Method" in result.issues[0]
+
+
+def test_source_quality_keeps_regular_a_prefixed_core_heading() -> None:
+    markdown = (
+        "# Paper\n\n"
+        + "Abstract content. " * 100
+        + "\n\n## A Method for Memory Evolution\n\n"
+        + "\n\n## 6 Conclusion\n\n"
+        + "Conclusion content. " * 100
+    )
+    result = evaluate_source(markdown, page_count=5)
+    assert result.status == "warning"
+    assert any("A Method for Memory Evolution" in issue for issue in result.issues)
+
+
 def test_prepare_source_import_and_cache(tmp_path: Path) -> None:
     repo = tmp_path / "repo"
     paper = repo / "inbox" / "papers" / "2026-test-source"

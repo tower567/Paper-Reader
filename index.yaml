@@ -1,3 +1,3925 @@
-generated_at: '2026-08-10T07:35:50.954657+00:00'
-paper_count: 0
-papers: []
+generated_at: '2026-08-11T05:01:38.121508+00:00'
+paper_count: 104
+papers:
+- id: 2026-asadolahi-memory-reward-inflation
+  title: Memory Reward Inflation in Self-Improving LLM Agents
+  title_zh: 自改进型 LLM 智能体中的记忆奖励膨胀
+  authors:
+  - Mohammad Asadolahi
+  - Amir Amini
+  - Samira Talebi
+  - Amirfarhad Farhadi
+  - Azadeh Zamanifar
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: 10.48550/arXiv.2608.00017
+    arxiv: '2608.00017'
+    source_url: https://arxiv.org/abs/2608.00017
+  domains:
+  - artificial intelligence
+  - natural language processing
+  topics:
+  - LLM agents
+  - agentic memory
+  - self-improvement
+  - self-grading bias
+  - reward inflation
+  - memory de-inflation
+  task: Persistent memory validation and governance for self-improving LLM agents
+  method_family: Answer-free memory reward auditing and de-inflation
+  status: verified
+  code_url: ''
+  path: papers/2026-asadolahi-memory-reward-inflation
+  research_tracks:
+  - memory-evolution
+- id: 2026-banerjee-apex-em
+  title: 'APEX-EM: Non-Parametric Online Learning for Autonomous Agents via Structured Procedural-Episodic
+    Experience Replay'
+  title_zh: APEX-EM：通过结构化程序性—情景性经验回放实现自主智能体的非参数在线学习
+  authors:
+  - Pratyay Banerjee
+  - Masud Moshtaghi
+  - Ankit Chadha
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: 10.48550/arXiv.2603.29093
+    arxiv: '2603.29093'
+    source_url: https://arxiv.org/abs/2603.29093
+  domains:
+  - llm_agents
+  - agent_memory
+  - continual_learning
+  topics:
+  - structured_procedural_episodic_memory
+  - experience_replay
+  - cross_task_transfer
+  - failure_aware_retrieval
+  - memory_maintenance
+  task: online accumulation and cross-task reuse of procedural experience by frozen LLM agents
+  method_family: non-parametric experience memory with hybrid semantic, structural, and graph retrieval
+  status: verified
+  code_url: ''
+  path: papers/2026-banerjee-apex-em
+  research_tracks:
+  - skill-evolution
+  - memory-evolution
+- id: 2026-fan-safevla-bench
+  title: 'SafeVLA-Bench: A Benchmark for the Success–Safety Gap in Vision-Language-Action Models'
+  title_zh: SafeVLA-Bench：评估视觉—语言—动作模型“成功—安全差距”的基准
+  authors:
+  - Jialiang Fan
+  - Weizhe Xu
+  - Oleg Sokolsky
+  - Insup Lee
+  - Fanxin Kong
+  year: 2026
+  venue: arXiv preprint
+  identifiers:
+    doi: ''
+    arxiv: '2606.00773'
+    source_url: https://arxiv.org/abs/2606.00773
+  domains:
+  - robotics
+  - machine-learning
+  - formal-methods
+  topics:
+  - vision-language-action-models
+  - robot-safety
+  - benchmark-evaluation
+  - signal-temporal-logic
+  - trajectory-safety
+  - manipulation
+  task: post-hoc safety evaluation of VLA trajectories on manipulation benchmarks
+  method_family: task-aware STL safety specifications with unsafe-success and severity metrics
+  status: verified
+  code_url: https://safevla.org
+  path: papers/2026-fan-safevla-bench
+  research_tracks:
+  - vla-embodied-ai
+- id: 2026-fan-skill-drift
+  title: 'Skill Drift Is Contract Violation: Proactive Maintenance for LLM Agent Skill Libraries'
+  title_zh: 技能漂移即合约违反：面向 LLM 智能体技能库的主动维护
+  authors:
+  - Linfeng Fan
+  - Yuan Tian
+  - Ziwei Li
+  - Zhiwu Lu
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: 10.48550/arXiv.2605.10990
+    arxiv: '2605.10990'
+    source_url: https://arxiv.org/abs/2605.10990
+  domains:
+  - llm_agents
+  - software_engineering
+  topics:
+  - persistent_skill_libraries
+  - skill_drift
+  - contract_validation
+  - automated_repair
+  - governance
+  task: skill-drift monitoring and maintenance
+  method_family: contract-based monitoring and repair
+  status: verified
+  code_url: ''
+  path: papers/2026-fan-skill-drift
+  research_tracks:
+  - skill-evolution
+- id: 2026-gao-skillaudit
+  title: 'SkillAudit: Ground-Truth-Free Skill Evolution via Paired Trajectory Auditing'
+  title_zh: SkillAudit：基于配对轨迹审计的无真值技能进化
+  authors:
+  - Haowen Gao
+  - Haoran Chen
+  - Can Wang
+  - Shasha Guo
+  - Liang Pang
+  - Zhaoyang Liu
+  - Huawei Shen
+  - Xueqi Cheng
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2606.14239'
+    source_url: https://arxiv.org/abs/2606.14239
+  domains:
+  - artificial intelligence
+  - autonomous agents
+  topics:
+  - agent skill evolution
+  - paired trajectory auditing
+  - ground-truth-free evaluation
+  - process evaluation
+  - verifier-guided optimization
+  task: Ground-truth-free evolution of persistent agent skills
+  method_family: Paired trajectory auditing with process evaluators and a locked structural verifier
+  status: verified
+  code_url: ''
+  path: papers/2026-gao-skillaudit
+  research_tracks:
+  - skill-evolution
+- id: 2026-hu-skillbrew
+  title: 'SkillBrew: Multi-Objective Curation of Skill Banks for LLM Agents'
+  title_zh: SkillBrew：面向 LLM 智能体技能库的多目标策展
+  authors:
+  - Wentao Hu
+  - Zhendong Chu
+  - Yiming Zhang
+  - Junda Wu
+  - Ming Jin
+  - Xiangyu Zhao
+  - Yilei Shao
+  - Yanfeng Wang
+  - Qingsong Wen
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: 10.48550/arXiv.2605.29440
+    arxiv: '2605.29440'
+    source_url: https://arxiv.org/abs/2605.29440
+  domains:
+  - large language model agents
+  - agent memory
+  topics:
+  - skill bank curation
+  - multi-objective optimization
+  - retrieval-augmented agents
+  task: Curation of reusable skill banks for frozen LLM agents
+  method_family: Pareto-aware bi-level propose-then-verify
+  status: verified
+  code_url: ''
+  path: papers/2026-hu-skillbrew
+  research_tracks:
+  - skill-evolution
+  - memory-evolution
+- id: 2026-huang-skillwiki
+  title: 'SkillWiki: A Living Knowledge Infrastructure for Agent Skills'
+  title_zh: SkillWiki：面向智能体技能的活知识基础设施
+  authors:
+  - Dingcheng Huang
+  - Yuda Ding
+  - Bingshuo Liu
+  - Qingbin Liu
+  - Xi Chen
+  - Jiang Bian
+  - Hongliang Sun
+  - Zhiying Tu
+  - Dianhui Chu
+  - Xiaoyan Yu
+  - Dianbo Sui
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2606.16523'
+    source_url: https://arxiv.org/abs/2606.16523
+  domains:
+  - artificial intelligence
+  - autonomous agents
+  topics:
+  - agent skills
+  - knowledge-to-skill production
+  - skill provenance
+  - lifecycle governance
+  - execution-driven evolution
+  task: large-scale agent skill lifecycle management
+  method_family: living knowledge infrastructure and governance system
+  status: verified
+  code_url: https://github.com/Huangdingcheng/SkillWiki
+  path: papers/2026-huang-skillwiki
+  research_tracks:
+  - skill-evolution
+- id: 2026-jiang-memcon
+  title: 'Memory as a Controlled Process: Learned Adaptive Memory Management for LLM Agents'
+  title_zh: 记忆即受控过程：面向 LLM 智能体的学习型自适应记忆管理
+  authors:
+  - Eric Hanchen Jiang
+  - Zhi Zhang
+  - Yuchen Wu
+  - Levina Li
+  - Dong Liu
+  - Xiao Liang
+  - Rui Sun
+  - Yubei Li
+  - Edward Sun
+  - Haozheng Luo
+  - Zhaolu Kang
+  - Aylin Caliskan
+  - Kai-Wei Chang
+  - Ying Nian Wu
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2607.13591'
+    source_url: https://arxiv.org/abs/2607.13591
+  domains:
+  - llm-agents
+  - agent-memory
+  topics:
+  - adaptive-memory-management
+  - online-policy-learning
+  - plan-reuse
+  - memory-governance
+  task: adaptive memory-operation selection across sequential agent tasks
+  method_family: memory MDP with online tabular UCB control
+  status: verified
+  code_url: https://github.com/ericjiang18/MemCon/
+  path: papers/2026-jiang-memcon
+  research_tracks:
+  - memory-evolution
+- id: 2026-jin-exg
+  title: 'EXG: Self-Evolving Agents with Experience Graphs'
+  title_zh: EXG：基于经验图的自进化智能体
+  authors:
+  - Yuxin Jin
+  - Siyuan Zhang
+  - Hanchen Wang
+  - Lu Qin
+  - Ying Zhang
+  - Wenjie Zhang
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: 10.48550/arXiv.2605.17721
+    arxiv: '2605.17721'
+    source_url: https://arxiv.org/abs/2605.17721
+  domains:
+  - artificial intelligence
+  - large language model agents
+  topics:
+  - self-evolving agents
+  - agent memory
+  - experience graphs
+  - online experience accumulation
+  - offline experience reuse
+  task: Code generation and multi-hop reasoning with persistent experience reuse
+  method_family: Graph-structured external memory for self-evolving agents
+  status: verified
+  code_url: ''
+  path: papers/2026-jin-exg
+  research_tracks:
+  - memory-evolution
+- id: 2026-li-codeskill
+  title: 'CODESKILL: Learning Self-Evolving Skills for Coding Agents'
+  title_zh: CODESKILL：为编码智能体学习可自我演化的技能
+  authors:
+  - Yanzhou Li
+  - Yiran Zhang
+  - Xiaoyu Zhang
+  - Xiaoxia Liu
+  - Yang Liu
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2605.25430'
+    source_url: https://arxiv.org/abs/2605.25430
+  domains:
+  - artificial intelligence
+  - software engineering
+  topics:
+  - coding agents
+  - self-evolving agents
+  - agent skills
+  - long-term memory
+  - reinforcement learning
+  task: trajectory-to-skill extraction, evolution, maintenance, and reuse for coding agents
+  method_family: reinforcement-learned skill-bank management
+  status: verified
+  code_url: ''
+  path: papers/2026-li-codeskill
+  research_tracks:
+  - skill-evolution
+  - memory-evolution
+- id: 2026-li-robovlms
+  title: What Matters in Building Vision-Language-Action Models for Generalist Robots
+  title_zh: 面向通才机器人的视觉—语言—动作模型构建：什么最重要
+  authors:
+  - Xinghang Li
+  - Peiyan Li
+  - Long Qian
+  - Minghuan Liu
+  - Dong Wang
+  - Jirong Liu
+  - Bingyi Kang
+  - Xiao Ma
+  - Xinlong Wang
+  - Di Guo
+  - Tao Kong
+  - Hanbo Zhang
+  - Huaping Liu
+  year: 2026
+  venue: Nature Machine Intelligence
+  identifiers:
+    doi: 10.1038/s42256-025-01168-7
+    arxiv: '2412.14058'
+    source_url: https://doi.org/10.1038/s42256-025-01168-7
+  domains:
+  - robotics
+  - vision-language-action
+  - robot learning
+  - multimodal learning
+  topics:
+  - VLM backbone selection
+  - policy heads
+  - continuous action control
+  - history fusion
+  - cross-embodiment transfer
+  task: language-conditioned generalist tabletop robot manipulation
+  method_family: modular VLA framework with interchangeable VLM backbones and policy heads
+  status: verified
+  code_url: https://robovlms.github.io
+  path: papers/2026-li-robovlms
+  research_tracks:
+  - vla-embodied-ai
+- id: 2026-liao-memq
+  title: 'MemQ: Integrating Q-Learning into Self-Evolving Memory Agents over Provenance DAGs'
+  title_zh: MemQ：在溯源 DAG 上将 Q 学习融入自进化记忆智能体
+  authors:
+  - Junwei Liao
+  - Haoting Shi
+  - Ruiwen Zhou
+  - Jiaqian Wang
+  - Shengtao Zhang
+  - Wei Zhang
+  - Ying Wen
+  - Zhiyu Li
+  - Feiyu Xiong
+  - Bo Tang
+  - Weinan Zhang
+  - Muning Wen
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2605.08374'
+    source_url: https://arxiv.org/abs/2605.08374
+  domains:
+  - large language model agents
+  - reinforcement learning
+  topics:
+  - self-evolving episodic memory
+  - provenance DAG
+  - memory retrieval
+  - temporal-difference credit assignment
+  task: Persistent memory retrieval and multi-step credit assignment for frozen LLM agents
+  method_family: Q-augmented episodic memory with provenance-based TD(lambda)
+  status: verified
+  code_url: https://github.com/jwliao-ai/MemQ
+  path: papers/2026-liao-memq
+  research_tracks:
+  - memory-evolution
+- id: 2026-lin-muse-autoskill
+  title: 'MUSE-Autoskill: Self-Evolving Agents via Skill Creation, Memory, Management, and Evaluation'
+  title_zh: MUSE-Autoskill：通过技能创建、记忆、管理与评估实现自进化智能体
+  authors:
+  - Huawei Lin
+  - Peng Li
+  - Jie Song
+  - Fuxin Jiang
+  - Tieying Zhang
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2605.27366'
+    source_url: https://arxiv.org/abs/2605.27366
+  domains:
+  - artificial intelligence
+  - large language model agents
+  topics:
+  - agent skills
+  - self-evolving agents
+  - skill memory
+  - automatic skill generation
+  - cross-agent skill transfer
+  task: 从交互轨迹自动创建、检索、复用、评估、修订并迁移技能
+  method_family: skill-centric agent framework with hierarchical memory
+  status: verified
+  code_url: ''
+  path: papers/2026-lin-muse-autoskill
+  research_tracks:
+  - skill-evolution
+  - memory-evolution
+- id: 2026-liu-evolvemem
+  title: 'EVOLVEMEM: Self-Evolving Memory Architecture via AutoResearch for LLM Agents'
+  title_zh: EVOLVEMEM：基于 AutoResearch 的大语言模型智能体自进化记忆架构
+  authors:
+  - Jiaqi Liu
+  - Xinyu Ye
+  - Peng Xia
+  - Zeyu Zheng
+  - Cihang Xie
+  - Mingyu Ding
+  - Huaxiu Yao
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2605.13941'
+    source_url: https://arxiv.org/abs/2605.13941
+  domains:
+  - artificial-intelligence
+  - natural-language-processing
+  topics:
+  - llm-agents
+  - long-term-memory
+  - self-evolution
+  - adaptive-retrieval
+  - retrieval-configuration
+  - cross-benchmark-transfer
+  task: Long-term conversational memory retrieval and question answering
+  method_family: Self-evolving memory and retrieval architecture
+  status: verified
+  code_url: https://github.com/aiming-lab/SimpleMem
+  path: papers/2026-liu-evolvemem
+  research_tracks:
+  - memory-evolution
+- id: 2026-ma-proplay
+  title: 'ProPlay: Procedural World Models for Self-Evolving LLM Agents'
+  title_zh: ProPlay：面向自进化 LLM 智能体的过程式世界模型
+  authors:
+  - Yijun Ma
+  - Zehong Wang
+  - Yiyang Li
+  - Ziming Li
+  - Xiaoguang Guo
+  - Weixiang Sun
+  - Chuxu Zhang
+  - Yanfang Ye
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: 10.48550/arXiv.2606.12780
+    arxiv: '2606.12780'
+    source_url: https://arxiv.org/abs/2606.12780
+  domains:
+  - large language model agents
+  - self-evolving agents
+  - world models
+  topics:
+  - procedural world model
+  - procedure graph
+  - experience abstraction
+  - procedure-level preplay
+  - reliability records
+  - online self-evolution
+  task: online agent self-evolution in partially observable interactive environments
+  method_family: procedural world modeling with episodic preplay and refinement
+  status: verified
+  code_url: https://github.com/antman9914/proplay
+  path: papers/2026-ma-proplay
+  research_tracks:
+  - skill-evolution
+  - memory-evolution
+- id: 2026-ma-skillclaw
+  title: 'SkillClaw: Let Skills Evolve Collectively with Agentic Evolver'
+  title_zh: SkillClaw：让技能通过智能体进化器实现集体演化
+  authors:
+  - Ziyu Ma
+  - Shidong Yang
+  - Yuxiang Ji
+  - Xucong Wang
+  - Yong Wang
+  - Yiming Hu
+  - Tongwen Huang
+  - Xiangxiang Chu
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2604.08377'
+    source_url: https://arxiv.org/abs/2604.08377
+  domains:
+  - autonomous agents
+  - agent self-evolution
+  - multi-user agent systems
+  topics:
+  - collective skill evolution
+  - shared interaction evidence
+  - agentic evolver
+  - skill validation and synchronization
+  - WildClawBench
+  task: 从跨用户交互中持续生成、验证、同步并复用智能体技能
+  method_family: agentic skill evolution
+  status: verified
+  code_url: https://github.com/AMAP-ML/SkillClaw
+  path: papers/2026-ma-skillclaw
+  research_tracks:
+  - skill-evolution
+- id: 2026-mi-darwinian-memory
+  title: 'Darwinian Memory: A Training-Free Self-Regulating Memory System for GUI Agent Evolution'
+  title_zh: 达尔文式记忆：面向 GUI 智能体进化的免训练自调节记忆系统
+  authors:
+  - Hongze Mi
+  - Yibo Feng
+  - WenJie Lu
+  - Song Cao
+  - Jinyuan Li
+  - Yanming Li
+  - Xuelin Zhang
+  - Haotian Luo
+  - Songyang Peng
+  - He Cui
+  - Tengfei Tian
+  - Jun Fang
+  - Hua Chai
+  - Naiqiang Tan
+  year: 2026
+  venue: ''
+  identifiers:
+    doi: ''
+    arxiv: '2601.22528'
+    source_url: https://arxiv.org/abs/2601.22528
+  domains:
+  - artificial intelligence
+  - multimodal GUI agents
+  topics:
+  - agent memory
+  - self-evolving agents
+  - procedural experience reuse
+  - memory retrieval and regulation
+  - long-horizon GUI automation
+  task: long-horizon cross-application GUI automation
+  method_family: training-free self-regulating evolutionary memory
+  status: verified
+  code_url: ''
+  path: papers/2026-mi-darwinian-memory
+  research_tracks:
+  - skill-evolution
+  - memory-evolution
+- id: 2026-mi-skill-pro
+  title: 'Skill-Pro: Learning Reusable Skills from Experience via Non-Parametric PPO for LLM Agents'
+  title_zh: Skill-Pro：通过非参数 PPO 从经验中学习可复用技能的 LLM 智能体框架
+  authors:
+  - Qirui Mi
+  - Zhijian Ma
+  - Mengyue Yang
+  - Haoxuan Li
+  - Yisen Wang
+  - Haifeng Zhang
+  - Jun Wang
+  year: 2026
+  venue: Proceedings of the 43rd International Conference on Machine Learning (ICML 2026), PMLR 306
+  identifiers:
+    doi: ''
+    arxiv: '2602.01869'
+    source_url: https://arxiv.org/abs/2602.01869
+  domains:
+  - large language model agents
+  - agent memory
+  topics:
+  - procedural memory
+  - reusable skills
+  - experience reuse
+  - non-parametric optimization
+  task: Learn persistent and reusable procedural skills from interaction trajectories for cross-task and
+    cross-agent transfer
+  method_family: Non-parametric skill learning with external procedural memory
+  status: verified
+  code_url: https://github.com/Miracle1207/Skill-Pro
+  path: papers/2026-mi-skill-pro
+  research_tracks:
+  - skill-evolution
+  - memory-evolution
+- id: 2026-moll-grasp
+  title: 'GRASP: Gated Regression-Aware Skill Proposer for Self-Improving LLM Agents'
+  title_zh: GRASP：面向自我改进 LLM 智能体的门控回归感知技能提议器
+  authors:
+  - Johannes Moll
+  - Jean-Philippe Corbeil
+  - Jiazhen Pan
+  - Martin Hadamitzky
+  - Daniel Rueckert
+  - Lisa Adams
+  - Keno Bressem
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2605.29668'
+    source_url: https://arxiv.org/abs/2605.29668
+  domains:
+  - llm-agents
+  - agent-self-improvement
+  - clinical-informatics
+  topics:
+  - bounded-skill-library
+  - failure-driven-learning
+  - regression-aware-validation
+  - cross-model-transfer
+  task: procedural tool-use self-improvement
+  method_family: validated skill-library editing
+  status: verified
+  code_url: https://github.com/jomoll/GRASP
+  path: papers/2026-moll-grasp
+  research_tracks:
+  - skill-evolution
+- id: 2026-nguyen-rsea
+  title: Recursive Self-Evolving Agents via Held-Out Selection
+  title_zh: 基于留出集选择的递归自进化智能体
+  authors:
+  - Michael Nguyen
+  - Quoc Nguyen
+  - Paul Vuong
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: 10.48550/arXiv.2606.28374
+    arxiv: '2606.28374'
+    source_url: https://arxiv.org/abs/2606.28374
+  domains:
+  - large language model agents
+  - agent self-improvement
+  topics:
+  - context evolution
+  - persistent natural-language state
+  - held-out selection
+  - skill and memory accumulation
+  - regression prevention and rollback
+  task: cross-task self-evolution of frozen LLM agents
+  method_family: held-out-gated context evolution
+  status: verified
+  code_url: ''
+  path: papers/2026-nguyen-rsea
+  research_tracks:
+  - skill-evolution
+  - memory-evolution
+- id: 2026-ouyang-skillos
+  title: 'SkillOS: Learning Skill Curation for Self-Evolving Agents'
+  title_zh: SkillOS：面向自进化智能体的技能策展学习
+  authors:
+  - Siru Ouyang
+  - Jun Yan
+  - Yanfei Chen
+  - Rujun Han
+  - Zifeng Wang
+  - Bhavana Dalvi Mishra
+  - Rui Meng
+  - Chun-Liang Li
+  - Yizhu Jiao
+  - Kaiwen Zha
+  - Maohao Shen
+  - Vishy Tirumalashetty
+  - George Lee
+  - Jiawei Han
+  - Tomas Pfister
+  - Chen-Yu Lee
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: 10.48550/arXiv.2605.06614
+    arxiv: '2605.06614'
+    source_url: https://arxiv.org/abs/2605.06614
+  domains:
+  - artificial intelligence
+  - natural language processing
+  topics:
+  - self-evolving agents
+  - skill curation
+  - external skill memory
+  - reinforcement learning
+  - continual adaptation
+  task: streaming skill repository curation for self-evolving LLM agents
+  method_family: experience-driven reinforcement learning with an external skill repository
+  status: verified
+  code_url: ''
+  path: papers/2026-ouyang-skillos
+  research_tracks:
+  - skill-evolution
+  - memory-evolution
+- id: 2026-pu-skillops
+  title: 'SkillOps: Managing LLM Agent Skill Libraries as Self-Maintaining Software Ecosystems'
+  title_zh: SkillOps：将 LLM 智能体技能库管理为自维护软件生态
+  authors:
+  - Xinyuan Song
+  - Hongji Pu
+  - Liang Zhao
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: 10.48550/arXiv.2605.13716
+    arxiv: 2605.13716v1
+    source_url: https://arxiv.org/abs/2605.13716v1
+  domains:
+  - large language model agents
+  - software engineering
+  topics:
+  - agent skill libraries
+  - skill technical debt
+  - skill library maintenance
+  - typed skill contracts
+  - graph-based skill composition
+  - self-evolving agents
+  task: maintenance and reliable composition of persistent LLM-agent skill libraries
+  method_family: typed skill contracts with hierarchical graph planning and rule-based library maintenance
+  status: verified
+  code_url: https://github.com/Hik289/SkillOps
+  path: papers/2026-pu-skillops
+  research_tracks:
+  - skill-evolution
+- id: 2026-quevedo-worldgym
+  title: 'WorldGym: World Model as An Environment for Policy Evaluation'
+  title_zh: WorldGym：将世界模型用作策略评测环境
+  authors:
+  - Julian Quevedo
+  - Ansh Kumar Sharma
+  - Yixiang Sun
+  - Varad Suryavanshi
+  - Percy Liang
+  - Sherry Yang
+  year: 2026
+  venue: International Conference on Learning Representations (ICLR 2026)
+  identifiers:
+    doi: ''
+    arxiv: '2506.00613'
+    source_url: https://iclr.cc/virtual/2026/poster/10007934
+  domains:
+  - robotics
+  - robot learning
+  - generative world models
+  topics:
+  - action-conditioned video generation
+  - offline policy evaluation
+  - vision-language reward models
+  - VLA policy evaluation
+  - out-of-distribution generalization
+  task: evaluate real-robot policies through rollouts in a learned video world model
+  method_family: action-conditioned autoregressive video world model
+  status: verified
+  code_url: https://world-model-eval.github.io
+  path: papers/2026-quevedo-worldgym
+  research_tracks:
+  - vla-embodied-ai
+- id: 2026-ren-flowevo
+  title: 'FlowEvo: Self-Evolving Agents through the Co-Evolution of Workflows and Executable Skills'
+  title_zh: FlowEvo：通过工作流与可执行技能协同进化实现自进化智能体
+  authors:
+  - Zeyu Ren
+  - Ling Yue
+  - Ran Li
+  - Yishu Wang
+  - Shengxiang Xu
+  - Hanmo Liu
+  - Shaowu Pan
+  - Shimin Di
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2607.21596'
+    source_url: https://arxiv.org/abs/2607.21596
+  domains:
+  - artificial intelligence
+  - large language model agents
+  topics:
+  - agent self-evolution
+  - executable skill memory
+  - workflow optimization
+  - retrieval and routing
+  - skill governance
+  task: inference-time capability accumulation and cross-task reuse
+  method_family: workflow-skill co-evolution
+  status: verified
+  code_url: https://github.com/DEFENSE-SEU/FlowEvo
+  path: papers/2026-ren-flowevo
+  research_tracks:
+  - skill-evolution
+  - memory-evolution
+- id: 2026-shen-skillfoundry
+  title: 'SKILLFOUNDRY: Building Self-Evolving Agent Skill Libraries from Heterogeneous Scientific Resources'
+  title_zh: SKILLFOUNDRY：从异构科学资源构建自演化智能体技能库
+  authors:
+  - Shuaike Shen
+  - Wenduo Cheng
+  - Mingqian Ma
+  - Alistair Turcan
+  - Martin Jinye Zhang
+  - Jian Ma
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: 10.48550/arXiv.2604.03964
+    arxiv: 2604.03964v1
+    source_url: https://arxiv.org/abs/2604.03964v1
+  domains:
+  - artificial intelligence
+  - scientific computing
+  topics:
+  - scientific agents
+  - agent skills
+  - self-evolving skill libraries
+  - skill mining
+  - skill validation
+  task: automated construction and maintenance of scientific agent skill libraries
+  method_family: tree-guided closed-loop skill mining and validation
+  status: verified
+  code_url: https://github.com/ma-compbio-lab/SkillFoundry
+  path: papers/2026-shen-skillfoundry
+  research_tracks:
+  - skill-evolution
+- id: 2026-sun-maniparena
+  title: 'ManipArena: A Controlled Benchmark for Diagnosing Generalization in Real-Robot Manipulation'
+  title_zh: ManipArena：用于诊断真实机器人操作泛化的受控基准
+  authors:
+  - Yu Sun
+  - Meng Cao
+  - Yang Ping
+  - Kaidong Zhang
+  - Qingxuan Chen
+  - Rongtao Xu
+  - Liangwang Ruan
+  - Xuecheng Chen
+  - Dongxiu Liu
+  - Yunxiao Yan
+  - Zunnan Xu
+  - Runze Xu
+  - Charles Yang
+  - Peilun Zhang
+  - Xiaofan Li
+  - Ruyi Gan
+  - Liang Ma
+  - Yuehao Yin
+  - Jincheng Yu
+  - Lufang Chen
+  - Yuxin Liang
+  - Peng Zhai
+  - Hao Wang
+  - Ivan Laptev
+  - Ian Reid
+  - Qian Wang
+  - Xiaodan Liang
+  year: 2026
+  venue: arXiv preprint / CVPR 2026 Embodied AI Challenge
+  identifiers:
+    doi: ''
+    arxiv: '2603.28545'
+    source_url: https://arxiv.org/abs/2603.28545
+  domains:
+  - robotics
+  - machine-learning
+  topics:
+  - vision-language-action-models
+  - world-action-models
+  - real-robot-evaluation
+  - out-of-distribution-generalization
+  - partial-credit-scoring
+  - sim-to-real
+  task: controlled real-robot evaluation of manipulation generalization and failure modes
+  method_family: schema-driven stratified real-robot benchmark with paired simulation diagnostics
+  status: verified
+  code_url: ''
+  path: papers/2026-sun-maniparena
+  research_tracks:
+  - vla-embodied-ai
+- id: 2026-tan-skillzip
+  title: 'SkillZip: Contract-Preserving Graph Compression for Scalable Agent Skill Libraries'
+  title_zh: SkillZip：面向可扩展智能体技能库的契约保持图压缩
+  authors:
+  - Xingyu Tan
+  - Xiaoyang Wang
+  - Qing Liu
+  - Xiwei Xu
+  - Xin Yuan
+  - Liming Zhu
+  - Wenjie Zhang
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2608.05604'
+    source_url: https://arxiv.org/abs/2608.05604
+  domains:
+  - llm-agents
+  - procedural-memory
+  topics:
+  - agent-skill-libraries
+  - graph-compression
+  - contract-preserving-retrieval
+  - incremental-skill-maintenance
+  task: Scalable retrieval and executable-context construction for evolving agent skill libraries
+  method_family: Contract-preserving typed graph grammar with budgeted graph hydration
+  status: verified
+  code_url: ''
+  path: papers/2026-tan-skillzip
+  research_tracks:
+  - skill-evolution
+  - memory-evolution
+- id: 2026-tang-msce
+  title: 'From Memory to Skills: Evidence-Grounded Co-Evolution Governance for Long-Horizon LLM Agents'
+  title_zh: 从记忆到技能：面向长时程 LLM 智能体的证据支撑式协同进化治理
+  authors:
+  - Bo Tang
+  - Yang Zhang
+  - Guomian Zhuang
+  - Wenqiang Wei
+  - Gaoyang Zheng
+  - Lindong Xie
+  - Yanchao Tan
+  - Feiyu Xiong
+  - Qingyu Yang
+  - Edward Chung
+  - Zhiyu Li
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2607.16621'
+    source_url: https://arxiv.org/abs/2607.16621
+  domains:
+  - LLM agents
+  - agent memory
+  - lifelong agent learning
+  topics:
+  - memory-skill co-evolution
+  - hierarchical memory
+  - skill crystallization
+  - reflection-weighted value backfilling
+  - evidence-grounded governance
+  task: long-horizon agent self-evolution and long-term dialogue memory
+  method_family: training-free hierarchical memory and skill governance
+  status: verified
+  code_url: https://github.com/MemTensor/MemOS
+  path: papers/2026-tang-msce
+  research_tracks:
+  - skill-evolution
+  - memory-evolution
+- id: 2026-tu-d2skill
+  title: Dynamic Dual-Granularity Skill Bank for Agentic RL
+  title_zh: 面向智能体强化学习的动态双粒度技能库
+  authors:
+  - Songjun Tu
+  - Chengdong Xu
+  - Qichao Zhang
+  - Yaocheng Zhang
+  - Xiangyuan Lan
+  - Linjing Li
+  - Dong Li
+  - Dongbin Zhao
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2603.28716'
+    source_url: https://arxiv.org/abs/2603.28716
+  domains:
+  - agentic reinforcement learning
+  - language-model agents
+  topics:
+  - persistent skill memory
+  - dual-granularity skills
+  - hindsight optimization
+  - skill retrieval and pruning
+  - agent self-evolution
+  task: interactive decision-making and search-augmented question answering
+  method_family: dynamic external skill memory for agentic RL
+  status: verified
+  code_url: https://github.com/TU2021/D2SkillAgenticRL
+  path: papers/2026-tu-d2skill
+  research_tracks:
+  - skill-evolution
+  - memory-evolution
+- id: 2026-wang-admem
+  title: 'AdMem: Advanced Memory for Task-solving Agents'
+  title_zh: AdMem：面向任务求解智能体的高级记忆
+  authors:
+  - Runzhe Wang
+  - Huilin Lu
+  - Shengjie Liu
+  - Li Dong
+  - Jason Zhu
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: 10.48550/arXiv.2606.06787
+    arxiv: '2606.06787'
+    source_url: https://arxiv.org/abs/2606.06787
+  domains:
+  - LLM agents
+  - agent memory
+  - continual learning
+  topics:
+  - semantic memory
+  - episodic memory
+  - procedural memory
+  - long-horizon task solving
+  - memory governance
+  task: Streaming multi-task agent task solving
+  method_family: Critic-guided short- and long-term agent memory
+  status: verified
+  code_url: ''
+  path: papers/2026-wang-admem
+  research_tracks:
+  - skill-evolution
+  - memory-evolution
+- id: 2026-wang-skillx
+  title: 'SkillX: Automatically Constructing Skill Knowledge Bases for Agents'
+  title_zh: SkillX：自动构建智能体技能知识库
+  authors:
+  - Chenxi Wang
+  - Zhuoyun Yu
+  - Xin Xie
+  - Wuguannan Yao
+  - Runnan Fang
+  - Shuofei Qiao
+  - Kexin Cao
+  - Guozhou Zheng
+  - Xiang Qi
+  - Peng Zhang
+  - Shumin Deng
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: 10.48550/arXiv.2604.04804
+    arxiv: '2604.04804'
+    source_url: https://arxiv.org/abs/2604.04804
+  domains:
+  - large language model agents
+  - tool-using agents
+  topics:
+  - skill knowledge base
+  - hierarchical skills
+  - self-evolving agents
+  - experience transfer
+  - exploratory skill acquisition
+  task: cross-agent skill acquisition and transfer in tool-using environments
+  method_family: hierarchical trajectory-to-skill extraction with iterative library refinement
+  status: verified
+  code_url: https://github.com/zjunlp/SkillX
+  path: papers/2026-wang-skillx
+  research_tracks:
+  - skill-evolution
+- id: 2026-xia-grasp
+  title: 'GraSP: Graph-Structured Skill Compositions for LLM Agents'
+  title_zh: GraSP：面向 LLM 智能体的图结构技能组合
+  authors:
+  - Tianle Xia
+  - Lingxiang Hu
+  - Yiding Sun
+  - Ming Xu
+  - Lan Xu
+  - Siying Wang
+  - Wei Xu
+  - Jie Jiang
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: 10.48550/arXiv.2604.17870
+    arxiv: '2604.17870'
+    source_url: https://arxiv.org/abs/2604.17870
+  domains:
+  - llm-agents
+  - agent-skill-orchestration
+  - sequential-decision-making
+  topics:
+  - memory-conditioned-retrieval
+  - typed-skill-graphs
+  - dag-compilation
+  - precondition-effect-dependencies
+  - node-level-verification
+  - local-graph-repair
+  - confidence-based-routing
+  task: graph-structured skill retrieval, composition, and execution in interactive agents
+  method_family: typed DAG skill orchestration with verified local repair
+  status: verified
+  code_url: ''
+  path: papers/2026-xia-grasp
+  research_tracks:
+  - skill-evolution
+  - memory-evolution
+- id: 2026-xia-skillrl
+  title: 'SkillRL: Evolving Agents via Recursive Skill-Augmented Reinforcement Learning'
+  title_zh: SkillRL：通过递归技能增强强化学习实现智能体演化
+  authors:
+  - Peng Xia
+  - Jianwen Chen
+  - Hanyang Wang
+  - Jiaqi Liu
+  - Kaide Zeng
+  - Yu Wang
+  - Siwei Han
+  - Yiyang Zhou
+  - Xujiang Zhao
+  - Haifeng Chen
+  - Zeyu Zheng
+  - Cihang Xie
+  - Huaxiu Yao
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2602.08234'
+    source_url: https://arxiv.org/abs/2602.08234
+  domains:
+  - artificial intelligence
+  - machine learning
+  topics:
+  - LLM agents
+  - reinforcement learning
+  - external skill memory
+  - agent self-evolution
+  - retrieval-augmented policy learning
+  task: Interactive decision-making in ALFWorld and WebShop; search-augmented question answering
+  method_family: Skill-augmented reinforcement learning with an external hierarchical skill library
+  status: verified
+  code_url: https://github.com/aiming-lab/SkillRL
+  path: papers/2026-xia-skillrl
+  research_tracks:
+  - skill-evolution
+  - memory-evolution
+- id: 2026-xu-evolib
+  title: Test-Time Learning with an Evolving Library
+  title_zh: 借助演化知识库进行测试时学习
+  authors:
+  - Weijia Xu
+  - Alessandro Sordoni
+  - Chandan Singh
+  - Zelalem Gero
+  - Michel Galley
+  - Xingdi Yuan
+  - Jianfeng Gao
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2605.14477'
+    source_url: https://arxiv.org/abs/2605.14477
+  domains:
+  - artificial intelligence
+  - machine learning
+  topics:
+  - large language models
+  - test-time learning
+  - agent self-evolution
+  - skill library
+  - reflective memory
+  - continual learning
+  task: 跨实例测试时学习与持续自改进
+  method_family: 非参数化演化技能与记忆库
+  status: verified
+  code_url: https://github.com/microsoft/EvoLib
+  path: papers/2026-xu-evolib
+  research_tracks:
+  - skill-evolution
+  - memory-evolution
+- id: 2026-yan-memory-r2
+  title: 'Memory-R2: Fair Credit Assignment for Long-Horizon Memory-Augmented LLM Agents'
+  title_zh: Memory-R2：面向长时程记忆增强型 LLM 智能体的公平信用分配
+  authors:
+  - Sikuan Yan
+  - Ahmed Bahloul
+  - Ercong Nie
+  - Susanna Schwarzmann
+  - Riccardo Trivisonno
+  - Volker Tresp
+  - Yunpu Ma
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2605.21768'
+    source_url: https://arxiv.org/abs/2605.21768
+  domains:
+  - natural language processing
+  - reinforcement learning
+  - LLM agents
+  topics:
+  - memory-augmented LLM agents
+  - long-horizon credit assignment
+  - persistent memory
+  - group-relative policy optimization
+  task: long-horizon multi-session memory construction
+  method_family: LoGo-GRPO with shared extractor-manager co-learning
+  status: verified
+  code_url: ''
+  path: papers/2026-yan-memory-r2
+  research_tracks:
+  - memory-evolution
+- id: 2026-yan-openskill
+  title: 'OpenSkill: Open-World Self-Evolution for LLM Agents'
+  title_zh: OpenSkill：面向大语言模型智能体的开放世界自进化
+  authors:
+  - Zhiling Yan
+  - Dingjie Song
+  - Hanrong Zhang
+  - Wei Liang
+  - Yuxuan Zhang
+  - Yutong Dai
+  - Lifang He
+  - Philip S. Yu
+  - Ran Xu
+  - Xiang Li
+  - Lichao Sun
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: 10.48550/arXiv.2606.06741
+    arxiv: '2606.06741'
+    source_url: https://arxiv.org/abs/2606.06741
+  domains:
+  - large language model agents
+  - agent self-evolution
+  topics:
+  - open-world knowledge acquisition
+  - agent skills
+  - virtual verification
+  - cross-model skill transfer
+  task: open-world skill construction, iterative refinement, and zero-shot deployment
+  method_family: retrieval-grounded skill synthesis with self-generated virtual verification
+  status: verified
+  code_url: https://github.com/OpenLAIR/OpenSkill
+  path: papers/2026-yan-openskill
+  research_tracks:
+  - skill-evolution
+  - memory-evolution
+- id: 2026-yang-autoskill
+  title: 'AutoSkill: Experience-Driven Lifelong Learning via Skill Self-Evolution'
+  title_zh: AutoSkill：通过技能自演化实现经验驱动的终身学习
+  authors:
+  - Yutao Yang
+  - Junsong Li
+  - Qianjun Pan
+  - Bihao Zhan
+  - Yuxuan Cai
+  - Lin Du
+  - Jie Zhou
+  - Kai Chen
+  - Qin Chen
+  - Xin Li
+  - Bo Zhang
+  - Liang He
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: 10.48550/arXiv.2603.01145
+    arxiv: '2603.01145'
+    source_url: https://arxiv.org/abs/2603.01145
+  domains:
+  - artificial intelligence
+  - natural language processing
+  topics:
+  - LLM agents
+  - lifelong learning
+  - skill self-evolution
+  - personalization
+  - external memory
+  - retrieval-augmented generation
+  task: skill induction, maintenance, retrieval, and reuse from interaction experience
+  method_family: training-free prompt-driven external skill memory
+  status: verified
+  code_url: https://github.com/ECNU-ICALK/AutoSkill
+  path: papers/2026-yang-autoskill
+  research_tracks:
+  - skill-evolution
+  - memory-evolution
+- id: 2026-yang-skillopt
+  title: 'SkillOpt: Executive Strategy for Self-Evolving Agent Skills'
+  title_zh: SkillOpt：自演化智能体技能的执行策略
+  authors:
+  - Yifan Yang
+  - Ziyang Gong
+  - Weiquan Huang
+  - Qihao Yang
+  - Ziwei Zhou
+  - Zisu Huang
+  - Yan Li
+  - Xuemei Gao
+  - Qi Dai
+  - Bei Liu
+  - Kai Qiu
+  - Yuqing Yang
+  - Dongdong Chen
+  - Xue Yang
+  - Chong Luo
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: 10.48550/arXiv.2605.23904
+    arxiv: '2605.23904'
+    source_url: https://arxiv.org/abs/2605.23904
+  domains:
+  - artificial intelligence
+  - language-model agents
+  topics:
+  - agent skills
+  - self-evolving agents
+  - text-space optimization
+  - validation-gated updates
+  - skill transfer
+  task: agent skill optimization
+  method_family: validation-gated text-space optimization
+  status: verified
+  code_url: https://aka.ms/SkillOpt
+  path: papers/2026-yang-skillopt
+  research_tracks:
+  - skill-evolution
+- id: 2026-yang-trustmem
+  title: 'TRUSTMEM: Learning Trustworthy Memory Consolidation for LLM Agents with Long-Term Memory'
+  title_zh: TRUSTMEM：面向长期记忆 LLM 智能体的可信记忆整合学习
+  authors:
+  - Tianyu Yang
+  - Sudipta Paul
+  - Vijay Srinivasan
+  - Vivek Kulkarni
+  - Srinivas Chappidi
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: 10.48550/arXiv.2606.25161
+    arxiv: '2606.25161'
+    source_url: https://arxiv.org/abs/2606.25161
+  domains:
+  - large-language-model agents
+  - long-term memory
+  topics:
+  - memory consolidation
+  - memory transition verification
+  - trustworthy AI
+  - reinforcement learning
+  task: trustworthy long-term memory consolidation
+  method_family: verifier-guided reinforcement learning
+  status: verified
+  code_url: ''
+  path: papers/2026-yang-trustmem
+  research_tracks:
+  - memory-evolution
+- id: 2026-ye-auto-dreamer
+  title: 'Auto-Dreamer: Learning Offline Memory Consolidation for Language Agents'
+  title_zh: Auto-Dreamer：为语言智能体学习离线记忆巩固
+  authors:
+  - Chongrui Ye
+  - Yuxiang Liu
+  - Yu Wang
+  - Haofei Yu
+  - Yining Zhao
+  - Ge Liu
+  - Julian McAuley
+  - Jiaxuan You
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: 10.48550/arXiv.2605.20616
+    arxiv: '2605.20616'
+    source_url: https://arxiv.org/abs/2605.20616
+  domains:
+  - natural language processing
+  - autonomous agents
+  topics:
+  - language-agent memory
+  - offline memory consolidation
+  - continual learning
+  - memory governance
+  task: persistent cross-session memory consolidation for language agents
+  method_family: learned two-timescale memory with provenance-grounded region rewriting
+  status: verified
+  code_url: ''
+  path: papers/2026-ye-auto-dreamer
+  research_tracks:
+  - memory-evolution
+- id: 2026-ye-meta-context-engineering
+  title: Meta Context Engineering via Agentic Skill Evolution
+  title_zh: 通过智能体技能演化实现元上下文工程
+  authors:
+  - Haoran Ye
+  - Xuning He
+  - Vincent Arak
+  - Haonan Dong
+  - Guojie Song
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2601.21557'
+    source_url: https://arxiv.org/abs/2601.21557
+  domains:
+  - large-language-models
+  - agentic-ai
+  topics:
+  - context-engineering
+  - agentic-skill-evolution
+  - self-improving-agents
+  - context-artifacts
+  task: agentic context optimization
+  method_family: bi-level evolutionary context engineering
+  status: verified
+  code_url: https://github.com/metaevo-ai/meta-context-engineering
+  path: papers/2026-ye-meta-context-engineering
+  research_tracks:
+  - skill-evolution
+- id: 2026-zhang-coevoskills
+  title: 'CoEvoSkills: Self-Evolving Agent Skills via Co-Evolutionary Verification'
+  title_zh: CoEvoSkills：通过协同演化验证实现智能体技能自演化
+  authors:
+  - Hanrong Zhang
+  - Shicheng Fan
+  - Henry Peng Zou
+  - Yankai Chen
+  - Zhenting Wang
+  - Jiayu Zhou
+  - Chengze Li
+  - Wei-Chieh Huang
+  - Yifei Yao
+  - Kening Zheng
+  - Xue Liu
+  - Xiaoxiao Li
+  - Philip S. Yu
+  year: 2026
+  venue: ''
+  identifiers:
+    doi: ''
+    arxiv: '2604.01687'
+    source_url: https://arxiv.org/abs/2604.01687
+  domains:
+  - artificial intelligence
+  - large language model agents
+  topics:
+  - agent skills
+  - self-evolving agents
+  - co-evolutionary verification
+  - surrogate verification
+  - cross-model transfer
+  task: autonomous generation and validation of multi-file agent skill packages
+  method_family: co-evolutionary self-improvement
+  status: verified
+  code_url: ''
+  path: papers/2026-zhang-coevoskills
+  research_tracks:
+  - skill-evolution
+- id: 2026-zhang-memrl
+  title: 'MemRL: Self-Evolving Agents via Runtime Reinforcement Learning on Episodic Memory'
+  title_zh: MemRL：通过对情景记忆进行运行时强化学习实现自进化智能体
+  authors:
+  - Shengtao Zhang
+  - Jiaqian Wang
+  - Ruiwen Zhou
+  - Junwei Liao
+  - Yuchen Feng
+  - Zhuo Li
+  - Yujie Zheng
+  - Weinan Zhang
+  - Ying Wen
+  - Zhiyu Li
+  - Feiyu Xiong
+  - Yutao Qi
+  - Bo Tang
+  - Muning Wen
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2601.03192'
+    source_url: https://arxiv.org/abs/2601.03192
+  domains:
+  - artificial intelligence
+  - reinforcement learning
+  - agent systems
+  topics:
+  - self-evolving agents
+  - episodic memory
+  - runtime learning
+  - value-aware retrieval
+  task: runtime continual learning for frozen LLM agents
+  method_family: non-parametric reinforcement learning on episodic memory
+  status: verified
+  code_url: https://github.com/MemTensor/MemRL
+  path: papers/2026-zhang-memrl
+  research_tracks:
+  - memory-evolution
+- id: 2026-zhang-memskill
+  title: 'MemSkill: Learning and Evolving Memory Skills for Self-Evolving Agents'
+  title_zh: MemSkill：为自进化智能体学习并演化记忆技能
+  authors:
+  - Haozhen Zhang
+  - Quanyu Long
+  - Jianzhu Bao
+  - Tao Feng
+  - Weizhi Zhang
+  - Haodong Yue
+  - Wenya Wang
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2602.02474'
+    source_url: https://arxiv.org/abs/2602.02474
+  domains:
+  - artificial intelligence
+  - large language model agents
+  topics:
+  - agent memory
+  - self-evolving agents
+  - memory skills
+  - long-context interaction
+  task: adaptive memory construction and revision for LLM agents
+  method_family: learnable and evolvable memory skills
+  status: verified
+  code_url: https://github.com/ViktorAxelsen/MemSkill
+  path: papers/2026-zhang-memskill
+  research_tracks:
+  - skill-evolution
+  - memory-evolution
+- id: 2026-zhang-ratchet
+  title: 'Ratchet: How Reliable Must an LLM Judge Be to Retire a Skill?'
+  title_zh: Ratchet：LLM 裁判需要多可靠才能淘汰技能？
+  authors:
+  - Xing Zhang
+  - Yanwei Cui
+  - Guanghui Wang
+  - Ziyuan Li
+  - Wei Qiu
+  - Bing Zhu
+  - Peiyang He
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: 10.48550/arXiv.2605.22148
+    arxiv: '2605.22148'
+    source_url: https://arxiv.org/abs/2605.22148
+  domains:
+  - large language model agents
+  - AI system reliability
+  topics:
+  - skill-library governance
+  - library drift
+  - LLM-as-a-judge
+  - noisy feedback
+  task: Retire harmful skills from a self-evolving skill library under noisy scalar evaluation
+  method_family: Closed-loop skill-library governance with contribution-based eviction and a capacity
+    bound
+  status: verified
+  code_url: https://github.com/amazon-science/Self-Evolving-Agents-Ratchet
+  path: papers/2026-zhang-ratchet
+  research_tracks:
+  - skill-evolution
+- id: 2026-zhang-skillflow
+  title: 'SkillFlow: Flow-Driven Recursive Skill Evolution for Agentic Orchestration'
+  title_zh: SkillFlow：面向智能体编排的流驱动递归技能演化
+  authors:
+  - Mingda Zhang
+  - Tiesunlong Shen
+  - Haoran Luo
+  - Wenjin Liu
+  - Zikai Xiao
+  - Erik Cambria
+  - Xiaoying Tang
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2605.14089'
+    source_url: https://arxiv.org/abs/2605.14089
+  domains:
+  - large-language-model agents
+  - machine learning
+  topics:
+  - agentic orchestration
+  - flow-based training
+  - recursive skill evolution
+  - credit assignment
+  - dynamic skill library
+  task: multi-domain agentic task orchestration
+  method_family: tempered trajectory balance with flow-guided skill curation
+  status: verified
+  code_url: https://anonymous.4open.science/r/SkillFlow-E850
+  path: papers/2026-zhang-skillflow
+  research_tracks:
+  - skill-evolution
+- id: 2026-zhao-safety-risks
+  title: On Safety Risks in Experience-Driven Self-Evolving Agents
+  title_zh: 经验驱动型自演化智能体的安全风险
+  authors:
+  - Weixiang Zhao
+  - Yichen Zhang
+  - Yingshuo Wang
+  - Yang Deng
+  - Yanyan Zhao
+  - Xuda Zhi
+  - Yongbo Huang
+  - Hao He
+  - Wanxiang Che
+  - Bing Qin
+  - Ting Liu
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: 10.48550/arXiv.2604.16968
+    arxiv: '2604.16968'
+    source_url: https://arxiv.org/abs/2604.16968
+  domains:
+  - ai-agent-safety
+  - self-evolving-agents
+  topics:
+  - experience-driven-self-evolution
+  - external-memory
+  - safety-degradation
+  - execution-bias
+  - refusal-over-refusal
+  task: safety evaluation of experience-driven self-evolving agents
+  method_family: empirical safety analysis
+  status: verified
+  code_url: ''
+  path: papers/2026-zhao-safety-risks
+  research_tracks:
+  - memory-evolution
+- id: 2026-zhou-memento-skills
+  title: 'Memento-Skills: Let Agents Design Agents'
+  title_zh: Memento-Skills：让智能体设计智能体
+  authors:
+  - Huichi Zhou
+  - Siyuan Guo
+  - Anjie Liu
+  - Zhongwei Yu
+  - Ziqin Gong
+  - Bowen Zhao
+  - Zhixun Chen
+  - Menglong Zhang
+  - Yihang Chen
+  - Jinsong Li
+  - Runyu Yang
+  - Qiangbin Liu
+  - Xinlei Yu
+  - Jianmin Zhou
+  - Na Wang
+  - Chunyang Sun
+  - Jun Wang
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2603.18743'
+    source_url: https://arxiv.org/abs/2603.18743
+  domains:
+  - large language model agents
+  - continual learning
+  - external memory
+  topics:
+  - agent self-evolution
+  - skill learning
+  - read-write memory
+  - behavior-aligned routing
+  - non-parametric continual learning
+  task: 从交互经验中自动构建、检索、修订并复用任务技能
+  method_family: Read-Write Reflective Learning with skill-as-memory
+  status: verified
+  code_url: https://github.com/Memento-Teams/Memento-Skills
+  path: papers/2026-zhou-memento-skills
+  research_tracks:
+  - skill-evolution
+  - memory-evolution
+- id: 2026-zhu-edv
+  title: 'Escaping the Self-Confirmation Trap: An Execute-Distill-Verify Paradigm for Agentic Experience
+    Learning'
+  title_zh: 逃离自我确认陷阱：面向智能体经验学习的执行—蒸馏—验证范式
+  authors:
+  - Shiding Zhu
+  - Yudi Qi
+  - Yajie Wang
+  - Jiaze Li
+  - Chao Song
+  - Yaorui Shi
+  - Yibo Miao
+  - Hanqi Gao
+  - Kai Zhang
+  year: 2026
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2606.24428'
+    source_url: https://arxiv.org/abs/2606.24428
+  domains:
+  - large language model agents
+  - agent memory
+  topics:
+  - agentic experience learning
+  - persistent memory
+  - multi-agent collaboration
+  - memory validation and governance
+  - self-evolution
+  task: reliable construction, admission, and reuse of long-term agent experience
+  method_family: Execute-Distill-Verify multi-agent memory governance
+  status: verified
+  code_url: https://github.com/shidingz/EDV
+  path: papers/2026-zhu-edv
+  research_tracks:
+  - memory-evolution
+- id: 2025-agibot-world-colosseo
+  title: 'AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied
+    Systems'
+  title_zh: AgiBot World Colosseo：面向可扩展智能具身系统的大规模操作平台
+  authors:
+  - AgiBot-World-Contributors
+  year: 2025
+  venue: 2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
+  identifiers:
+    doi: 10.48550/arXiv.2503.06669
+    arxiv: '2503.06669'
+    source_url: https://arxiv.org/abs/2503.06669
+  domains:
+  - robotics
+  - machine-learning
+  - datasets
+  topics:
+  - large-scale-robot-data
+  - industrial-data-collection
+  - bimanual-humanoid-manipulation
+  - human-in-the-loop-quality-control
+  - latent-action-planning
+  - robot-foundation-model
+  - long-horizon-manipulation
+  task: scalable real-world bimanual manipulation data collection and generalist policy learning
+  method_family: industrial robot data platform with latent-action VLM planner and action expert
+  status: verified
+  code_url: https://github.com/OpenDriveLab/AgiBot-World
+  path: papers/2025-agibot-world-colosseo
+  research_tracks:
+  - vla-embodied-ai
+- id: 2025-atreya-roboarena
+  title: 'RoboArena: Distributed Real-World Evaluation of Generalist Robot Policies'
+  title_zh: RoboArena：通用机器人策略的分布式真实世界评测
+  authors:
+  - Pranav Atreya
+  - Karl Pertsch
+  - Tony Lee
+  - Moo Jin Kim
+  - Arhan Jain
+  - Artur Kuramshin
+  - Clemens Eppner
+  - Cyrus Neary
+  - Edward Hu
+  - Fabio Ramos
+  - Jonathan Tremblay
+  - Kanav Arora
+  - Kirsty Ellis
+  - Luca Macesanu
+  - Marcel Torne Villasevil
+  - Matthew Leonard
+  - Meedeum Cho
+  - Ozgur Aslan
+  - Shivin Dass
+  - Jie Wang
+  - William Reger
+  - Xingfang Yuan
+  - Xuning Yang
+  - Abhishek Gupta
+  - Dinesh Jayaraman
+  - Glen Berseth
+  - Kostas Daniilidis
+  - Roberto Martin-Martin
+  - Youngwoon Lee
+  - Percy Liang
+  - Chelsea Finn
+  - Sergey Levine
+  year: 2025
+  venue: 9th Conference on Robot Learning (CoRL 2025)
+  identifiers:
+    doi: ''
+    arxiv: '2506.18123'
+    source_url: https://arxiv.org/abs/2506.18123
+  domains:
+  - robotics
+  - robot learning
+  - embodied AI
+  topics:
+  - generalist robot policies
+  - distributed real-world evaluation
+  - pairwise preference ranking
+  - crowd-sourced benchmarking
+  task: distributed real-world evaluation and ranking of generalist robot policies
+  method_family: decentralized double-blind pairwise evaluation
+  status: verified
+  code_url: ''
+  path: papers/2025-atreya-roboarena
+  research_tracks:
+  - vla-embodied-ai
+- id: 2025-cao-reme
+  title: 'Remember Me, Refine Me: A Dynamic Procedural Memory Framework for Experience-Driven Agent Evolution'
+  title_zh: 记住我，精炼我：面向经验驱动智能体演化的动态程序性记忆框架
+  authors:
+  - Zouying Cao
+  - Jiaji Deng
+  - Li Yu
+  - Weikang Zhou
+  - Zhaoyang Liu
+  - Bolin Ding
+  - Hai Zhao
+  year: 2025
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2512.10696'
+    source_url: https://arxiv.org/abs/2512.10696
+  domains:
+  - artificial intelligence
+  - large language model agents
+  topics:
+  - agent self-evolution
+  - procedural memory
+  - experience-driven learning
+  - dynamic memory management
+  - retrieval-augmented decision making
+  task: 将智能体交互轨迹转化为可持久化、可检索、可复用并可在线修订的程序性经验
+  method_family: 动态程序性记忆 / experience-driven agent evolution
+  status: verified
+  code_url: https://github.com/agentscope-ai/ReMe
+  path: papers/2025-cao-reme
+  research_tracks:
+  - skill-evolution
+  - memory-evolution
+- id: 2025-fang-memp
+  title: 'Memp: Exploring Agent Procedural Memory'
+  title_zh: Memp：探索智能体程序性记忆
+  authors:
+  - Runnan Fang
+  - Yuan Liang
+  - Xiaobin Wang
+  - Jialong Wu
+  - Shuofei Qiao
+  - Pengjun Xie
+  - Fei Huang
+  - Huajun Chen
+  - Ningyu Zhang
+  year: 2025
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2508.06433'
+    source_url: https://arxiv.org/abs/2508.06433
+  domains:
+  - artificial intelligence
+  - autonomous agents
+  - large language models
+  topics:
+  - procedural memory
+  - agent self-evolution
+  - memory retrieval
+  - online memory update
+  - cross-model memory transfer
+  task: persistent procedural-memory construction, retrieval, update, and reuse for LLM agents
+  method_family: external procedural memory with trajectory-and-script representations
+  status: verified
+  code_url: ''
+  path: papers/2025-fang-memp
+  research_tracks:
+  - skill-evolution
+  - memory-evolution
+- id: 2025-forouzandeh-macla
+  title: Learning Hierarchical Procedural Memory for LLM Agents through Bayesian Selection and Contrastive
+    Refinement
+  title_zh: 通过贝叶斯选择与对比精炼学习 LLM 智能体的层级程序记忆
+  authors:
+  - Saman Forouzandeh
+  - Wei Peng
+  - Parham Moradi
+  - Xinghuo Yu
+  - Mahdi Jalili
+  year: 2025
+  venue: 25th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2026)
+  identifiers:
+    doi: 10.48550/arXiv.2512.18950
+    arxiv: '2512.18950'
+    source_url: https://arxiv.org/abs/2512.18950
+  domains:
+  - large-language-model-agents
+  - continual-learning
+  topics:
+  - hierarchical-procedural-memory
+  - bayesian-decision-making
+  - contrastive-refinement
+  - meta-procedure-composition
+  - memory-management
+  task: continual adaptation for interactive agent tasks
+  method_family: external hierarchical procedural memory
+  status: verified
+  code_url: https://github.com/S-Forouzandeh/MACLA-LLM-Agents-AAMAS-Conference
+  path: papers/2025-forouzandeh-macla
+  research_tracks:
+  - skill-evolution
+  - memory-evolution
+- id: 2025-kawaharazuka-vla-review
+  title: 'Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications'
+  title_zh: 面向真实世界应用的机器人视觉—语言—动作模型综述
+  authors:
+  - Kento Kawaharazuka
+  - Jihoon Oh
+  - Jun Yamada
+  - Ingmar Posner
+  - Yuke Zhu
+  year: 2025
+  venue: IEEE Access
+  identifiers:
+    doi: 10.1109/ACCESS.2025.3609980
+    arxiv: '2510.07077'
+    source_url: https://doi.org/10.1109/ACCESS.2025.3609980
+  domains:
+  - robotics
+  - embodied artificial intelligence
+  - machine learning
+  topics:
+  - vision-language-action models
+  - robot learning
+  - sensorimotor policies
+  - robot datasets
+  - robot evaluation
+  - real-world robot deployment
+  - robot safety
+  task: systematic full-stack review of VLA architectures, data, evaluation, and real-world deployment
+  method_family: survey and taxonomy of vision-language-action systems
+  status: verified
+  code_url: ''
+  path: papers/2025-kawaharazuka-vla-review
+  research_tracks:
+  - vla-embodied-ai
+- id: 2025-kim-openvla-oft
+  title: 'Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success'
+  title_zh: 视觉—语言—动作模型微调：同时优化速度与成功率
+  authors:
+  - Moo Jin Kim
+  - Chelsea Finn
+  - Percy Liang
+  year: 2025
+  venue: 'Robotics: Science and Systems XXI'
+  identifiers:
+    doi: 10.15607/RSS.2025.XXI.017
+    arxiv: '2502.19645'
+    source_url: https://www.roboticsproceedings.org/rss21/p017.html
+  domains:
+  - robotics
+  - machine-learning
+  topics:
+  - vision-language-action-models
+  - parameter-efficient-fine-tuning
+  - action-chunking
+  - parallel-action-decoding
+  - continuous-action-regression
+  - bimanual-manipulation
+  task: efficient downstream adaptation of pretrained VLAs to new robots and manipulation tasks
+  method_family: LoRA fine-tuning with parallel continuous action chunks and L1 regression
+  status: verified
+  code_url: https://openvla-oft.github.io/
+  path: papers/2025-kim-openvla-oft
+  research_tracks:
+  - vla-embodied-ai
+- id: 2025-liu-contextual-experience-replay
+  title: Contextual Experience Replay for Self-Improvement of Language Agents
+  title_zh: 面向语言智能体自我改进的上下文经验回放
+  authors:
+  - Yitao Liu
+  - Chenglei Si
+  - Karthik Narasimhan
+  - Shunyu Yao
+  year: 2025
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2506.06698'
+    source_url: https://arxiv.org/abs/2506.06698
+  domains:
+  - language agents
+  - web agents
+  - continual learning
+  topics:
+  - contextual experience replay
+  - dynamic memory
+  - skill distillation
+  - self-improvement
+  - experience reuse
+  task: web navigation
+  method_family: training-free contextual memory and experience replay
+  status: verified
+  code_url: ''
+  path: papers/2025-liu-contextual-experience-replay
+  research_tracks:
+  - skill-evolution
+  - memory-evolution
+- id: 2025-liu-rdt1b
+  title: 'RDT-1B: a Diffusion Foundation Model for Bimanual Manipulation'
+  title_zh: RDT-1B：用于双臂操作的扩散基础模型
+  authors:
+  - Songming Liu
+  - Lingxuan Wu
+  - Bangguo Li
+  - Hengkai Tan
+  - Huayu Chen
+  - Zhengyi Wang
+  - Ke Xu
+  - Hang Su
+  - Jun Zhu
+  year: 2025
+  venue: International Conference on Learning Representations (ICLR 2025)
+  identifiers:
+    doi: ''
+    arxiv: '2410.07864'
+    source_url: https://openreview.net/forum?id=yAzN4tz7Q0
+  domains:
+  - robotics
+  - machine-learning
+  topics:
+  - bimanual-manipulation
+  - robotics-foundation-model
+  - diffusion-policy
+  - unified-action-representation
+  - multi-robot-pretraining
+  - language-conditioned-visuomotor-control
+  - few-shot-robot-learning
+  task: language-conditioned bimanual manipulation with zero-shot and few-shot generalization
+  method_family: large-scale diffusion transformer with cross-robot pretraining and target-robot fine-tuning
+  status: verified
+  code_url: ''
+  path: papers/2025-liu-rdt1b
+  research_tracks:
+  - vla-embodied-ai
+- id: 2025-nvidia-gr00t-n1
+  title: 'GR00T N1: An Open Foundation Model for Generalist Humanoid Robots'
+  title_zh: GR00T N1：面向通用人形机器人的开放基础模型
+  authors:
+  - NVIDIA
+  - Johan Bjorck
+  - Fernando Castañeda
+  - Nikita Cherniadev
+  - Xingye Da
+  - Runyu Ding
+  - Linxi Jim Fan
+  - Yu Fang
+  - Dieter Fox
+  year: 2025
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2503.14734'
+    source_url: https://arxiv.org/abs/2503.14734
+  domains:
+  - robotics
+  - machine-learning
+  topics:
+  - generalist-humanoid-robotics
+  - vision-language-action-model
+  - diffusion-transformer
+  - flow-matching
+  - cross-embodiment-learning
+  - synthetic-robot-data
+  - bimanual-manipulation
+  task: language-conditioned generalist humanoid and bimanual manipulation
+  method_family: dual-system VLM plus flow-matching diffusion transformer
+  status: verified
+  code_url: ''
+  path: papers/2025-nvidia-gr00t-n1
+  research_tracks:
+  - vla-embodied-ai
+- id: 2025-ouyang-reasoningbank
+  title: 'ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory'
+  title_zh: ReasoningBank：以推理记忆扩展智能体自我演化
+  authors:
+  - Siru Ouyang
+  - Jun Yan
+  - I-Hung Hsu
+  - Yanfei Chen
+  - Ke Jiang
+  - Zifeng Wang
+  - Rujun Han
+  - Long T. Le
+  - Samira Daruki
+  - Xiangru Tang
+  - Vishy Tirumalashetty
+  - George Lee
+  - Mahsan Rofouei
+  - Hangfei Lin
+  - Jiawei Han
+  - Chen-Yu Lee
+  - Tomas Pfister
+  year: 2025
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2509.25140'
+    source_url: https://arxiv.org/abs/2509.25140
+  domains:
+  - artificial intelligence
+  - autonomous agents
+  topics:
+  - agent memory
+  - self-evolving agents
+  - reasoning memory
+  - test-time scaling
+  task: cross-task experience reuse for web browsing and software engineering agents
+  method_family: reasoning memory and memory-aware test-time scaling
+  status: verified
+  code_url: https://github.com/google-research/reasoning-bank
+  path: papers/2025-ouyang-reasoningbank
+  research_tracks:
+  - memory-evolution
+- id: 2025-pertsch-fast
+  title: 'FAST: Efficient Action Tokenization for Vision-Language-Action Models'
+  title_zh: FAST：面向视觉—语言—动作模型的高效动作标记化
+  authors:
+  - Karl Pertsch
+  - Kyle Stachowicz
+  - Brian Ichter
+  - Danny Driess
+  - Suraj Nair
+  - Quan Vuong
+  - Oier Mees
+  - Chelsea Finn
+  - Sergey Levine
+  year: 2025
+  venue: 'Robotics: Science and Systems XXI (RSS 2025)'
+  identifiers:
+    doi: 10.15607/RSS.2025.XXI.012
+    arxiv: '2501.09747'
+    source_url: https://www.roboticsproceedings.org/rss21/p012.html
+  domains:
+  - robotics
+  - embodied artificial intelligence
+  - machine learning
+  topics:
+  - vision-language-action models
+  - action tokenization
+  - discrete cosine transform
+  - byte-pair encoding
+  - autoregressive robot policies
+  - high-frequency dexterous manipulation
+  - cross-embodiment robot learning
+  task: language-conditioned high-frequency robot manipulation and generalist VLA control
+  method_family: autoregressive VLA with DCT-BPE frequency-space action tokenization
+  status: verified
+  code_url: https://github.com/Physical-Intelligence/openpi
+  path: papers/2025-pertsch-fast
+  research_tracks:
+  - vla-embodied-ai
+- id: 2025-physical-intelligence-pi05
+  title: 'π0.5: a Vision-Language-Action Model with Open-World Generalization'
+  title_zh: π0.5：具备开放世界泛化能力的视觉—语言—动作模型
+  authors:
+  - Physical Intelligence
+  - Kevin Black
+  - Noah Brown
+  - James Darpinian
+  - Karan Dhabalia
+  - Danny Driess
+  - Adnan Esmail
+  - Michael Equi
+  - Chelsea Finn
+  - Niccolo Fusai
+  - Manuel Y. Galliker
+  - Dibya Ghosh
+  - Lachy Groom
+  - Karol Hausman
+  - Brian Ichter
+  - Szymon Jakubczak
+  - Tim Jones
+  - Liyiming Ke
+  - Devin LeBlanc
+  - Sergey Levine
+  - Adrian Li-Bell
+  - Mohith Mothukuri
+  - Suraj Nair
+  - Karl Pertsch
+  - Allen Z. Ren
+  - Lucy Xiaoyang Shi
+  - Laura Smith
+  - Jost Tobias Springenberg
+  - Kyle Stachowicz
+  - James Tanner
+  - Quan Vuong
+  - Homer Walke
+  - Anna Walling
+  - Haohuan Wang
+  - Lili Yu
+  - Ury Zhilinsky
+  year: 2025
+  venue: arXiv
+  identifiers:
+    doi: 10.48550/arXiv.2504.16054
+    arxiv: '2504.16054'
+    source_url: https://arxiv.org/abs/2504.16054
+  domains:
+  - robotics
+  - embodied-ai
+  topics:
+  - vision-language-action
+  - open-world-generalization
+  - heterogeneous-co-training
+  - cross-embodiment-transfer
+  - high-level-subtask-prediction
+  - long-horizon-manipulation
+  task: open-world mobile manipulation in unseen homes
+  method_family: vision-language-action model
+  status: verified
+  code_url: https://github.com/Physical-Intelligence/openpi
+  path: papers/2025-physical-intelligence-pi05
+  research_tracks:
+  - vla-embodied-ai
+- id: 2025-shukor-smolvla
+  title: 'SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics'
+  title_zh: SmolVLA：面向低成本高效率机器人的视觉—语言—动作模型
+  authors:
+  - Mustafa Shukor
+  - Dana Aubakirova
+  - Francesco Capuano
+  - Pepijn Kooijmans
+  - Steven Palma
+  - Adil Zouitine
+  - Michel Aractingi
+  - Caroline Pascal
+  - Martino Russi
+  - Andres Marafioti
+  - Simon Alibert
+  - Matthieu Cord
+  - Thomas Wolf
+  - Remi Cadene
+  year: 2025
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2506.01844'
+    source_url: https://arxiv.org/abs/2506.01844
+  domains:
+  - robotics
+  - embodied artificial intelligence
+  - machine learning
+  topics:
+  - vision-language-action models
+  - efficient robot learning
+  - flow matching
+  - asynchronous inference
+  - community robot datasets
+  - low-cost robotics
+  task: language-conditioned multi-task robot manipulation on affordable robot platforms
+  method_family: compact VLM with a flow-matching action expert and asynchronous action chunk execution
+  status: verified
+  code_url: https://github.com/huggingface/lerobot
+  path: papers/2025-shukor-smolvla
+  research_tracks:
+  - vla-embodied-ai
+- id: 2025-wang-asi
+  title: Inducing Programmatic Skills for Agentic Tasks
+  title_zh: 面向智能体任务的程序化技能归纳
+  authors:
+  - Zora Zhiruo Wang
+  - Apurva Gandhi
+  - Graham Neubig
+  - Daniel Fried
+  year: 2025
+  venue: COLM 2025
+  identifiers:
+    doi: ''
+    arxiv: '2504.06821'
+    source_url: https://arxiv.org/abs/2504.06821
+  domains:
+  - language-model-agents
+  - web-navigation
+  topics:
+  - online-adaptation
+  - programmatic-skills
+  - skill-induction
+  - execution-based-verification
+  - cross-website-transfer
+  task: online adaptive web navigation
+  method_family: non-parametric agent skill induction
+  status: verified
+  code_url: ''
+  path: papers/2025-wang-asi
+  research_tracks:
+  - skill-evolution
+- id: 2025-xu-a-mem
+  title: 'A-Mem: Agentic Memory for LLM Agents'
+  title_zh: A-Mem：面向大语言模型智能体的自主式记忆
+  authors:
+  - Wujiang Xu
+  - Zujie Liang
+  - Kai Mei
+  - Hang Gao
+  - Juntao Tan
+  - Yongfeng Zhang
+  year: 2025
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: 2502.12110v11
+    source_url: https://arxiv.org/abs/2502.12110v11
+  domains:
+  - large language model agents
+  - natural language processing
+  topics:
+  - agentic memory
+  - long-term memory
+  - memory evolution
+  - Zettelkasten
+  task: long-term conversational memory
+  method_family: dynamic structured memory network
+  status: verified
+  code_url: https://github.com/WujiangXu/AgenticMemory
+  path: papers/2025-xu-a-mem
+  research_tracks:
+  - memory-evolution
+- id: 2025-zhang-memevolve
+  title: 'MemEvolve: Meta-Evolution of Agent Memory Systems'
+  title_zh: MemEvolve：智能体记忆系统的元进化
+  authors:
+  - Guibin Zhang
+  - Haotian Ren
+  - Chong Zhan
+  - Zhenhong Zhou
+  - Junhao Wang
+  - He Zhu
+  - Wangchunshu Zhou
+  - Shuicheng Yan
+  year: 2025
+  venue: arXiv
+  identifiers:
+    doi: 10.48550/arXiv.2512.18746
+    arxiv: '2512.18746'
+    source_url: https://arxiv.org/abs/2512.18746
+  domains:
+  - large-language-model agents
+  - agent memory
+  - self-evolving systems
+  topics:
+  - meta-evolution
+  - memory architecture search
+  - experiential memory
+  - skill and tool distillation
+  - cross-task generalization
+  task: 通过交互反馈联合演化智能体的经验记忆与记忆架构
+  method_family: meta-evolutionary agent memory architecture search
+  status: verified
+  code_url: https://github.com/bingreeky/MemEvolve
+  path: papers/2025-zhang-memevolve
+  research_tracks:
+  - skill-evolution
+  - memory-evolution
+- id: 2025-zhang-vlabench
+  title: 'VLABench: A Large-Scale Benchmark for Language-Conditioned Robotics Manipulation with Long-Horizon
+    Reasoning Tasks'
+  title_zh: VLABench：面向长时程推理任务的语言条件机器人操作大规模基准
+  authors:
+  - Shiduo Zhang
+  - Zhe Xu
+  - Peiju Liu
+  - Xiaopeng Yu
+  - Yuan Li
+  - Qinghui Gao
+  - Zhaoye Fei
+  - Zhangyue Yin
+  - Zuxuan Wu
+  - Yu-Gang Jiang
+  - Xipeng Qiu
+  year: 2025
+  venue: IEEE/CVF International Conference on Computer Vision (ICCV 2025)
+  identifiers:
+    doi: ''
+    arxiv: '2412.18194'
+    source_url: https://openaccess.thecvf.com/content/ICCV2025/html/Zhang_VLABench_A_Large-Scale_Benchmark_for_Language-Conditioned_Robotics_Manipulation_with_Long-Horizon_ICCV_2025_paper.html
+  domains:
+  - robotics
+  - vision-language-action
+  - embodied AI
+  - benchmark evaluation
+  topics:
+  - language-conditioned manipulation
+  - long-horizon reasoning
+  - world knowledge transfer
+  - task generalization
+  - automated trajectory generation
+  task: evaluating generalist language-conditioned robot manipulation
+  method_family: benchmark with automated skill-based data generation and foundation-model evaluation
+  status: verified
+  code_url: https://github.com/OpenMOSS/VLABench
+  path: papers/2025-zhang-vlabench
+  research_tracks:
+  - skill-evolution
+  - vla-embodied-ai
+- id: 2025-zhao-cot-vla
+  title: 'CoT-VLA: Visual Chain-of-Thought Reasoning for Vision-Language-Action Models'
+  title_zh: CoT-VLA：面向视觉—语言—动作模型的视觉思维链推理
+  authors:
+  - Qingqing Zhao
+  - Yao Lu
+  - Moo Jin Kim
+  - Zipeng Fu
+  - Zhuoyang Zhang
+  - Yecheng Wu
+  - Zhaoshuo Li
+  - Qianli Ma
+  - Song Han
+  - Chelsea Finn
+  - Ankur Handa
+  - Ming-Yu Liu
+  - Donglai Xiang
+  - Gordon Wetzstein
+  - Tsung-Yi Lin
+  year: 2025
+  venue: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
+  identifiers:
+    doi: 10.1109/CVPR52734.2025.00166
+    arxiv: '2503.22020'
+    source_url: https://openaccess.thecvf.com/content/CVPR2025/html/Zhao_CoT-VLA_Visual_Chain-of-Thought_Reasoning_for_Vision-Language-Action_Models_CVPR_2025_paper.html
+  domains:
+  - robotics
+  - vision-language-action
+  - multimodal-generation
+  topics:
+  - visual chain-of-thought
+  - subgoal image generation
+  - action-less video pretraining
+  - action chunking
+  - closed-loop robot control
+  task: language-conditioned robot manipulation through generated visual subgoals
+  method_family: unified multimodal VLA with autoregressive visual subgoals and action chunks
+  status: verified
+  code_url: https://cot-vla.github.io/
+  path: papers/2025-zhao-cot-vla
+  research_tracks:
+  - vla-embodied-ai
+- id: 2025-zheng-skillweaver
+  title: 'SkillWeaver: Web Agents can Self-Improve by Discovering and Honing Skills'
+  title_zh: SkillWeaver：Web 智能体通过发现与打磨技能实现自我提升
+  authors:
+  - Boyuan Zheng
+  - Michael Y. Fatemi
+  - Xiaolong Jin
+  - Zora Zhiruo Wang
+  - Apurva Gandhi
+  - Yueqi Song
+  - Yu Gu
+  - Jayanth Srinivasa
+  - Gaowen Liu
+  - Graham Neubig
+  - Yu Su
+  year: 2025
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2504.07079'
+    source_url: https://arxiv.org/abs/2504.07079
+  domains:
+  - artificial intelligence
+  - web agents
+  topics:
+  - agent self-improvement
+  - skill discovery
+  - external memory
+  - API synthesis
+  - skill composition
+  task: autonomous website exploration and task completion
+  method_family: skill-centric self-improvement via synthesized Playwright APIs
+  status: verified
+  code_url: https://github.com/OSU-NLP-Group/SkillWeaver
+  path: papers/2025-zheng-skillweaver
+  research_tracks:
+  - skill-evolution
+  - memory-evolution
+- id: 2025-zhou-libero-pro
+  title: 'LIBERO-PRO: Towards Robust and Fair Evaluation of Vision-Language-Action Models Beyond Memorization'
+  title_zh: LIBERO-PRO：迈向超越记忆的鲁棒、公平视觉—语言—动作模型评测
+  authors:
+  - Xueyang Zhou
+  - Yangming Xu
+  - Guiyao Tie
+  - Yongchao Chen
+  - Guowen Zhang
+  - Duanfeng Chu
+  - Pan Zhou
+  - Lichao Sun
+  year: 2025
+  venue: arXiv preprint
+  identifiers:
+    doi: ''
+    arxiv: '2510.03827'
+    source_url: https://arxiv.org/abs/2510.03827
+  domains:
+  - robotics
+  - machine-learning
+  topics:
+  - vision-language-action-models
+  - benchmark-evaluation
+  - robustness
+  - out-of-distribution-generalization
+  - language-grounding
+  - counterfactual-perturbations
+  task: robustness and generalization evaluation of VLA policies on perturbed LIBERO tasks
+  method_family: controlled object, state, instruction, task, and environment perturbation benchmark
+  status: verified
+  code_url: https://github.com/Zxy-MLlab/LIBERO-PRO
+  path: papers/2025-zhou-libero-pro
+  research_tracks:
+  - memory-evolution
+  - vla-embodied-ai
+- id: 2024-ahn-autort
+  title: 'AutoRT: Embodied Foundation Models for Large Scale Orchestration of Robotic Agents'
+  title_zh: AutoRT：用具身基础模型大规模编排机器人智能体
+  authors:
+  - Michael Ahn
+  - Debidatta Dwibedi
+  - Chelsea Finn
+  - Montse Gonzalez Arenas
+  - Keerthana Gopalakrishnan
+  - Karol Hausman
+  - Brian Ichter
+  - Alex Irpan
+  - Nikhil Joshi
+  - Ryan Julian
+  - Sean Kirmani
+  - Isabel Leal
+  - Edward Lee
+  - Sergey Levine
+  - Yao Lu
+  - Sharath Maddineni
+  - Kanishka Rao
+  - Dorsa Sadigh
+  - Pannag Sanketi
+  - Pierre Sermanet
+  - Quan Vuong
+  - Stefan Welker
+  - Fei Xia
+  - Ted Xiao
+  - Peng Xu
+  - Steve Xu
+  - Zhuo Xu
+  year: 2024
+  venue: arXiv preprint / VLMNM 2024 workshop
+  identifiers:
+    doi: ''
+    arxiv: '2401.12963'
+    source_url: https://deepmind.google/research/publications/48151/
+  domains:
+  - robotics
+  - machine-learning
+  topics:
+  - robot-fleet-orchestration
+  - autonomous-data-collection
+  - vision-language-models
+  - large-language-models
+  - robot-safety
+  - real-world-deployment
+  task: large-scale semi-autonomous collection of diverse real-world robot experience
+  method_family: VLM scene grounding and LLM task orchestration over mixed-autonomy collection policies
+  status: verified
+  code_url: ''
+  path: papers/2024-ahn-autort
+  research_tracks:
+  - vla-embodied-ai
+- id: 2024-black-pi0
+  title: 'π0: A Vision-Language-Action Flow Model for General Robot Control'
+  title_zh: π0：面向通用机器人控制的视觉—语言—动作流模型
+  authors:
+  - Kevin Black
+  - Noah Brown
+  - Danny Driess
+  - Adnan Esmail
+  - Michael Equi
+  - Chelsea Finn
+  - Niccolo Fusai
+  - Lachy Groom
+  - Karol Hausman
+  - Brian Ichter
+  - Szymon Jakubczak
+  - Tim Jones
+  - Liyiming Ke
+  - Sergey Levine
+  - Adrian Li-Bell
+  - Mohith Mothukuri
+  - Suraj Nair
+  - Karl Pertsch
+  - Lucy Xiaoyang Shi
+  - James Tanner
+  - Quan Vuong
+  - Anna Walling
+  - Haohuan Wang
+  - Ury Zhilinsky
+  year: 2024
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2410.24164'
+    source_url: https://arxiv.org/abs/2410.24164
+  domains:
+  - robotics
+  - embodied-ai
+  topics:
+  - vision-language-action
+  - flow-matching
+  - cross-embodiment
+  - dexterous-manipulation
+  - robot-foundation-model
+  task: general robot control and dexterous manipulation
+  method_family: continuous-action VLA with a flow-matching action expert
+  status: verified
+  code_url: https://github.com/Physical-Intelligence/openpi
+  path: papers/2024-black-pi0
+  research_tracks:
+  - vla-embodied-ai
+- id: 2024-cheang-gr2
+  title: 'GR-2: A Generative Video-Language-Action Model with Web-Scale Knowledge for Robot Manipulation'
+  title_zh: GR-2：利用网页规模知识进行机器人操作的生成式视频—语言—动作模型
+  authors:
+  - Chi-Lam Cheang
+  - Guangzeng Chen
+  - Ya Jing
+  - Tao Kong
+  - Hang Li
+  - Yifeng Li
+  - Yuxiao Liu
+  - Hongtao Wu
+  - Jiafeng Xu
+  - Yichu Yang
+  - Hanbo Zhang
+  - Minzhao Zhu
+  year: 2024
+  venue: arXiv preprint
+  identifiers:
+    doi: ''
+    arxiv: '2410.06158'
+    source_url: https://arxiv.org/abs/2410.06158
+  domains:
+  - robotics
+  - machine-learning
+  topics:
+  - vision-language-action-models
+  - video-generative-pretraining
+  - world-dynamics
+  - action-chunking
+  - robot-manipulation
+  - out-of-distribution-generalization
+  task: language-conditioned multi-task manipulation with future-video and action-trajectory prediction
+  method_family: GPT-style generative video-language-action model with cVAE action trajectories
+  status: verified
+  code_url: ''
+  path: papers/2024-cheang-gr2
+  research_tracks:
+  - vla-embodied-ai
+- id: 2024-chi-umi
+  title: 'Universal Manipulation Interface: In-The-Wild Robot Teaching Without In-The-Wild Robots'
+  title_zh: 通用操作接口：无需将机器人带到现场的在野机器人示教
+  authors:
+  - Cheng Chi
+  - Zhenjia Xu
+  - Chuer Pan
+  - Eric Cousineau
+  - Benjamin Burchfiel
+  - Siyuan Feng
+  - Russ Tedrake
+  - Shuran Song
+  year: 2024
+  venue: 'Robotics: Science and Systems (RSS) 2024'
+  identifiers:
+    doi: 10.15607/RSS.2024.XX.045
+    arxiv: '2402.10329'
+    source_url: https://www.roboticsproceedings.org/rss20/p045.html
+  domains:
+  - robotics
+  - machine-learning
+  topics:
+  - in-the-wild-demonstrations
+  - robot-data-collection
+  - visuomotor-imitation-learning
+  - cross-embodiment-transfer
+  - relative-trajectory-action
+  - bimanual-manipulation
+  - portable-demonstration-interface
+  task: transfer in-the-wild human manipulation demonstrations to deployable robot policies
+  method_family: portable demonstration interface with hardware-agnostic visuomotor policy learning
+  status: verified
+  code_url: https://github.com/real-stanford/universal_manipulation_interface
+  path: papers/2024-chi-umi
+  research_tracks:
+  - vla-embodied-ai
+- id: 2024-hsu-rth
+  title: 'RT-H: Action Hierarchies Using Language'
+  title_zh: RT-H：使用语言构建动作层级
+  authors:
+  - Suneel Belkhale
+  - Tianli Ding
+  - Ted Xiao
+  - Pierre Sermanet
+  - Quan Vuong
+  - Jonathan Tompson
+  - Yevgen Chebotar
+  - Debidatta Dwibedi
+  - Dorsa Sadigh
+  year: 2024
+  venue: 'Robotics: Science and Systems XX'
+  identifiers:
+    doi: 10.15607/RSS.2024.XX.049
+    arxiv: '2403.01823'
+    source_url: https://www.roboticsproceedings.org/rss20/p049.html
+  domains:
+  - robotics
+  - robot learning
+  - vision-language-action
+  - interactive imitation learning
+  topics:
+  - action hierarchies
+  - language motions
+  - human intervention
+  - online correction learning
+  - generalization
+  task: language-conditioned multi-task robot manipulation with human correction
+  method_family: hierarchical VLA with an intermediate language-motion representation
+  status: verified
+  code_url: ''
+  path: papers/2024-hsu-rth
+  research_tracks:
+  - vla-embodied-ai
+- id: 2024-khazatsky-droid
+  title: 'DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset'
+  title_zh: DROID：大规模真实开放环境机器人操作数据集
+  authors:
+  - Alexander Khazatsky
+  - Karl Pertsch
+  - Suraj Nair
+  - Ashwin Balakrishna
+  - Sudeep Dasari
+  - Siddharth Karamcheti
+  - Soroush Nasiriany
+  year: 2024
+  venue: 'Robotics: Science and Systems (RSS)'
+  identifiers:
+    doi: 10.15607/RSS.2024.XX.120
+    arxiv: '2403.12945'
+    source_url: https://www.roboticsproceedings.org/rss20/p120.html
+  domains:
+  - robotics
+  - robot-learning
+  - embodied-ai
+  topics:
+  - large-scale robot datasets
+  - distributed data collection
+  - imitation learning
+  - diffusion policy
+  - out-of-distribution generalization
+  task: general-purpose robot manipulation from distributed demonstrations
+  method_family: in-the-wild robot dataset with diffusion-policy evaluation
+  status: verified
+  code_url: https://droid-dataset.github.io/
+  path: papers/2024-khazatsky-droid
+  research_tracks:
+  - vla-embodied-ai
+- id: 2024-kim-openvla
+  title: 'OpenVLA: An Open-Source Vision-Language-Action Model'
+  title_zh: OpenVLA：一个开源视觉—语言—动作模型
+  authors:
+  - Moo Jin Kim
+  - Karl Pertsch
+  - Siddharth Karamcheti
+  - Ted Xiao
+  - Ashwin Balakrishna
+  - Suraj Nair
+  - Rafael Rafailov
+  - Ethan P. Foster
+  - Pannag R. Sanketi
+  - Quan Vuong
+  - Thomas Kollar
+  - Benjamin Burchfiel
+  - Russ Tedrake
+  - Dorsa Sadigh
+  - Sergey Levine
+  - Percy Liang
+  - Chelsea Finn
+  year: 2024
+  venue: Proceedings of the 8th Conference on Robot Learning (CoRL 2024), PMLR 270
+  identifiers:
+    doi: ''
+    arxiv: '2406.09246'
+    source_url: https://proceedings.mlr.press/v270/kim25c.html
+  domains:
+  - robotics
+  - embodied artificial intelligence
+  - machine learning
+  topics:
+  - vision-language-action models
+  - generalist robot policies
+  - cross-embodiment robot learning
+  - action tokenization
+  - Open X-Embodiment
+  - parameter-efficient fine-tuning
+  - quantized robot policy inference
+  task: language-conditioned generalist manipulation, cross-robot direct control, and data-efficient adaptation
+    to new robot tasks
+  method_family: 7B vision-language model fine-tuned to autoregressively predict discretized robot action
+    tokens
+  status: verified
+  code_url: https://github.com/openvla/openvla
+  path: papers/2024-kim-openvla
+  research_tracks:
+  - vla-embodied-ai
+- id: 2024-li-cogact
+  title: 'CogACT: A Foundational Vision-Language-Action Model for Synergizing Cognition and Action in
+    Robotic Manipulation'
+  title_zh: CogACT：协同机器人操作认知与动作的基础视觉—语言—动作模型
+  authors:
+  - Qixiu Li
+  - Yaobo Liang
+  - Zeyu Wang
+  - Lin Luo
+  - Xi Chen
+  - Mozheng Liao
+  - Fangyun Wei
+  - Yu Deng
+  - Sicheng Xu
+  - Yizhong Zhang
+  - Xiaofan Wang
+  - Bei Liu
+  - Jianlong Fu
+  - Jianmin Bao
+  - Dong Chen
+  - Yuanchun Shi
+  - Jiaolong Yang
+  - Baining Guo
+  year: 2024
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2411.19650'
+    source_url: https://arxiv.org/abs/2411.19650
+  domains:
+  - robotics
+  - vision-language-action
+  - embodied-ai
+  topics:
+  - cognition-action decoupling
+  - diffusion transformer
+  - continuous robot control
+  - action sequence modeling
+  - model scaling
+  task: language-conditioned multi-embodiment robot manipulation
+  method_family: componentized VLA with diffusion action transformer
+  status: verified
+  code_url: ''
+  path: papers/2024-li-cogact
+  research_tracks:
+  - vla-embodied-ai
+- id: 2024-li-simpler
+  title: Evaluating Real-World Robot Manipulation Policies in Simulation
+  title_zh: 在仿真中评估真实世界机器人操控策略
+  authors:
+  - Xuanlin Li
+  - Kyle Hsu
+  - Jiayuan Gu
+  - Karl Pertsch
+  - Oier Mees
+  - Homer Rich Walke
+  - Chuyuan Fu
+  - Ishikaa Lunawat
+  - Isabel Sieh
+  - Sean Kirmani
+  - Sergey Levine
+  - Jiajun Wu
+  - Chelsea Finn
+  - Hao Su
+  - Quan Vuong
+  - Ted Xiao
+  year: 2024
+  venue: Proceedings of the 8th Conference on Robot Learning (CoRL 2024), PMLR 270
+  identifiers:
+    doi: ''
+    arxiv: '2405.05941'
+    source_url: https://arxiv.org/abs/2405.05941
+  domains:
+  - robotics
+  - embodied artificial intelligence
+  - machine learning
+  topics:
+  - vision-language-action evaluation
+  - real-to-sim evaluation
+  - robot manipulation benchmarks
+  - simulation validity
+  - distribution shifts
+  - reproducible evaluation
+  task: scalable and reproducible evaluation of real-world generalist robot manipulation policies in simulation
+  method_family: real-to-sim benchmark with system identification, visual matching, variant aggregation,
+    and rank-aware correlation metrics
+  status: verified
+  code_url: https://github.com/simpler-env/SimplerEnv
+  path: papers/2024-li-simpler
+  research_tracks:
+  - vla-embodied-ai
+- id: 2024-nasiriany-robocasa
+  title: 'RoboCasa: Large-Scale Simulation of Everyday Tasks for Generalist Robots'
+  title_zh: RoboCasa：面向通才机器人的日常任务大规模仿真
+  authors:
+  - Soroush Nasiriany
+  - Abhiram Maddukuri
+  - Lance Zhang
+  - Adeet Parikh
+  - Aaron Lo
+  - Abhishek Joshi
+  - Ajay Mandlekar
+  - Yuke Zhu
+  year: 2024
+  venue: 'Robotics: Science and Systems'
+  identifiers:
+    doi: 10.15607/RSS.2024.XX.064
+    arxiv: '2406.02523'
+    source_url: https://www.roboticsproceedings.org/rss20/p064.html
+  domains:
+  - robotics
+  - robot learning
+  - simulation
+  - household manipulation
+  topics:
+  - synthetic data generation
+  - imitation learning
+  - generalist policies
+  - compositional tasks
+  - sim-to-real transfer
+  task: multi-task kitchen manipulation in simulation and real environments
+  method_family: simulation framework with MimicGen data generation and behavior cloning
+  status: verified
+  code_url: https://robocasa.ai
+  path: papers/2024-nasiriany-robocasa
+  research_tracks:
+  - vla-embodied-ai
+- id: 2024-octo-model-team-octo
+  title: 'Octo: An Open-Source Generalist Robot Policy'
+  title_zh: Octo：开源通用机器人策略
+  authors:
+  - Octo Model Team
+  - Dibya Ghosh
+  - Homer Walke
+  - Karl Pertsch
+  - Kevin Black
+  - Oier Mees
+  - Sudeep Dasari
+  - Joey Hejna
+  - Tobias Kreiman
+  - Charles Xu
+  - Jianlan Luo
+  - You Liang Tan
+  - Lawrence Yunliang Chen
+  - Pannag Sanketi
+  - Quan Vuong
+  - Ted Xiao
+  - Dorsa Sadigh
+  - Chelsea Finn
+  - Sergey Levine
+  year: 2024
+  venue: 'Robotics: Science and Systems XX (RSS 2024)'
+  identifiers:
+    doi: 10.15607/RSS.2024.XX.090
+    arxiv: '2405.12213'
+    source_url: https://arxiv.org/abs/2405.12213
+  domains:
+  - robotics
+  - embodied artificial intelligence
+  - machine learning
+  topics:
+  - generalist robot policies
+  - cross-embodiment pretraining
+  - Open X-Embodiment
+  - diffusion action decoding
+  - modular transformers
+  - data-efficient fine-tuning
+  task: language- and goal-conditioned robot manipulation across embodiments and downstream interfaces
+  method_family: modular blockwise transformer policy with a conditional diffusion action head
+  status: verified
+  code_url: https://github.com/octo-models/octo
+  path: papers/2024-octo-model-team-octo
+  research_tracks:
+  - vla-embodied-ai
+- id: 2024-open-x-embodiment-rtx
+  title: 'Open X-Embodiment: Robotic Learning Datasets and RT-X Models'
+  title_zh: Open X-Embodiment：机器人学习数据集与 RT-X 模型
+  authors:
+  - Open X-Embodiment Collaboration
+  year: 2024
+  venue: 2024 IEEE International Conference on Robotics and Automation (ICRA 2024)
+  identifiers:
+    doi: 10.1109/ICRA57147.2024.10611477
+    arxiv: '2310.08864'
+    source_url: https://arxiv.org/abs/2310.08864
+  domains:
+  - robot-learning
+  - embodied-ai
+  - vision-language-action
+  topics:
+  - open-x-embodiment
+  - cross-embodiment-learning
+  - multi-robot-datasets
+  - rlds
+  - positive-transfer
+  - robot-foundation-models
+  task: language-conditioned cross-embodiment robotic manipulation
+  method_family: transformer-based cross-embodiment robot policy
+  status: verified
+  code_url: https://github.com/google-deepmind/open_x_embodiment
+  path: papers/2024-open-x-embodiment-rtx
+  research_tracks:
+  - vla-embodied-ai
+- id: 2024-pumacay-colosseum
+  title: 'THE COLOSSEUM: A Benchmark for Evaluating Generalization for Robotic Manipulation'
+  title_zh: THE COLOSSEUM：机器人操作泛化评估基准
+  authors:
+  - Wilbert Pumacay
+  - Ishika Singh
+  - Jiafei Duan
+  - Ranjay Krishna
+  - Jesse Thomason
+  - Dieter Fox
+  year: 2024
+  venue: 'Robotics: Science and Systems (RSS)'
+  identifiers:
+    doi: 10.15607/RSS.2024.XX.017
+    arxiv: '2402.08191'
+    source_url: https://www.roboticsproceedings.org/rss20/p017.html
+  domains:
+  - robotics
+  - robot-learning
+  - evaluation
+  topics:
+  - manipulation generalization
+  - environmental perturbations
+  - covariate shift
+  - behavior cloning
+  - sim-to-real evaluation
+  task: evaluate manipulation-policy robustness under environmental perturbations
+  method_family: RLBench-based perturbation benchmark for behavior-cloning policies
+  status: verified
+  code_url: https://robot-colosseum.github.io/
+  path: papers/2024-pumacay-colosseum
+  research_tracks:
+  - vla-embodied-ai
+- id: 2024-wang-agent-workflow-memory
+  title: Agent Workflow Memory
+  title_zh: 智能体工作流记忆
+  authors:
+  - Zora Zhiruo Wang
+  - Jiayuan Mao
+  - Daniel Fried
+  - Graham Neubig
+  year: 2024
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2409.07429'
+    source_url: https://arxiv.org/abs/2409.07429
+  domains:
+  - web agents
+  - agent memory
+  topics:
+  - workflow memory
+  - procedural memory
+  - experience abstraction
+  - online agent adaptation
+  task: long-horizon web navigation
+  method_family: workflow induction and text-memory augmentation
+  status: verified
+  code_url: https://github.com/zorazrw/agent-workflow-memory
+  path: papers/2024-wang-agent-workflow-memory
+  research_tracks:
+  - skill-evolution
+  - memory-evolution
+- id: 2024-zawalski-embodied-cot
+  title: Robotic Control via Embodied Chain-of-Thought Reasoning
+  title_zh: 通过具身思维链推理进行机器人控制
+  authors:
+  - Michał Zawalski
+  - William Chen
+  - Karl Pertsch
+  - Oier Mees
+  - Chelsea Finn
+  - Sergey Levine
+  year: 2024
+  venue: Conference on Robot Learning (CoRL), Proceedings of Machine Learning Research 305
+  identifiers:
+    doi: ''
+    arxiv: '2407.08693'
+    source_url: https://proceedings.mlr.press/v305/zawalski25a.html
+  domains:
+  - robotics
+  - vision-language-action
+  - embodied-ai
+  topics:
+  - embodied chain-of-thought
+  - synthetic reasoning supervision
+  - policy generalization
+  - interactive correction
+  - interpretable robot control
+  task: language-conditioned robot manipulation with intermediate embodied reasoning
+  method_family: OpenVLA finetuning with synthetic embodied chain-of-thought supervision
+  status: verified
+  code_url: https://embodied-cot.github.io/
+  path: papers/2024-zawalski-embodied-cot
+  research_tracks:
+  - vla-embodied-ai
+- id: 2024-zhang-agentoptimizer
+  title: Offline Training of Language Model Agents with Functions as Learnable Weights
+  title_zh: 以函数为可学习权重的语言模型智能体离线训练
+  authors:
+  - Shaokun Zhang
+  - Jieyu Zhang
+  - Jiale Liu
+  - Linxin Song
+  - Chi Wang
+  - Ranjay Krishna
+  - Qingyun Wu
+  year: 2024
+  venue: Proceedings of the 41st International Conference on Machine Learning (ICML 2024), PMLR 235
+  identifiers:
+    doi: ''
+    arxiv: '2402.11359'
+    source_url: https://arxiv.org/abs/2402.11359
+  domains:
+  - large language model agents
+  - agent optimization
+  topics:
+  - offline agent training
+  - function learning
+  - tool and skill acquisition
+  - domain transfer
+  - rollback and early stopping
+  task: Optimize an LLM agent's callable function set from offline training data without changing LLM
+    weights
+  method_family: LLM-based discrete function-set optimization
+  status: verified
+  code_url: ''
+  path: papers/2024-zhang-agentoptimizer
+  research_tracks:
+  - skill-evolution
+- id: 2024-zhao-learnact
+  title: Empowering Large Language Model Agents through Action Learning
+  title_zh: 通过动作学习增强大语言模型智能体
+  authors:
+  - Haiteng Zhao
+  - Chang Ma
+  - Guoyin Wang
+  - Jing Su
+  - Lingpeng Kong
+  - Jingjing Xu
+  - Zhi-Hong Deng
+  - Hongxia Yang
+  year: 2024
+  venue: COLM
+  identifiers:
+    doi: ''
+    arxiv: '2402.15809'
+    source_url: https://arxiv.org/abs/2402.15809
+  domains:
+  - large-language-model-agents
+  - embodied-ai
+  topics:
+  - open-action-learning
+  - executable-skills
+  - experiential-learning
+  - robotic-planning
+  - alfworld
+  task: cross-instance interactive task solving under shared action spaces and rules
+  method_family: iterative executable action-space learning
+  status: verified
+  code_url: ''
+  path: papers/2024-zhao-learnact
+  research_tracks:
+  - skill-evolution
+  - vla-embodied-ai
+- id: 2023-bousmalis-robocat
+  title: 'RoboCat: A Self-Improving Generalist Agent for Robotic Manipulation'
+  title_zh: RoboCat：面向机器人操作的自我改进通用智能体
+  authors:
+  - Konstantinos Bousmalis
+  - Giulia Vezzani
+  - Dushyant Rao
+  - Coline Devin
+  - Alex X. Lee
+  - Maria Bauza
+  - Todor Davchev
+  - Yuxiang Zhou
+  - Agrim Gupta
+  - Akhil Raju
+  - Antoine Laurens
+  - Claudio Fantacci
+  - Valentin Dalibard
+  - Martina Zambelli
+  - Murilo Martins
+  - Rugile Pevceviciute
+  - Michiel Blokzijl
+  - Misha Denil
+  - Nathan Batchelor
+  - Thomas Lampe
+  - Emilio Parisotto
+  - Konrad Żołna
+  - Scott Reed
+  - Sergio Gómez Colmenarejo
+  - Jon Scholz
+  - Abbas Abdolmaleki
+  - Oliver Groth
+  - Jean-Baptiste Regli
+  - Oleg Sushkov
+  - Tom Rothörl
+  - José Enrique Chen
+  - Yusuf Aytar
+  - Dave Barker
+  - Joy Ortiz
+  - Martin Riedmiller
+  - Jost Tobias Springenberg
+  - Raia Hadsell
+  - Francesco Nori
+  - Nicolas Heess
+  year: 2023
+  venue: Transactions on Machine Learning Research
+  identifiers:
+    doi: ''
+    arxiv: '2306.11706'
+    source_url: https://openreview.net/forum?id=vsCpILiWHu
+  domains:
+  - robotics
+  - machine-learning
+  topics:
+  - generalist-robot-policy
+  - multi-embodiment-learning
+  - visual-goal-conditioning
+  - imitation-learning
+  - autonomous-data-collection
+  - robot-manipulation
+  task: multi-task and multi-embodiment visual robotic manipulation with few-shot adaptation
+  method_family: visual goal-conditioned decision transformer with iterative self-generated data
+  status: verified
+  code_url: ''
+  path: papers/2023-bousmalis-robocat
+  research_tracks:
+  - vla-embodied-ai
+- id: 2023-brohan-rt1
+  title: 'RT-1: Robotics Transformer for Real-World Control at Scale'
+  title_zh: RT-1：面向大规模真实世界控制的机器人 Transformer
+  authors:
+  - Anthony Brohan
+  year: 2023
+  venue: 'Robotics: Science and Systems XIX'
+  identifiers:
+    doi: 10.15607/RSS.2023.XIX.025
+    arxiv: '2212.06817'
+    source_url: https://roboticsproceedings.org/rss19/p025.html
+    arxiv_url: https://arxiv.org/abs/2212.06817
+  domains:
+  - robotics
+  - embodied-ai
+  topics:
+  - vision-language-action
+  - robot-learning
+  - imitation-learning
+  - multi-task-learning
+  - action-tokenization
+  - data-scaling
+  - zero-shot-generalization
+  task: language-conditioned mobile manipulation
+  method_family: Robotics Transformer behavior cloning
+  status: verified
+  code_url: https://github.com/google-research/robotics_transformer
+  path: papers/2023-brohan-rt1
+  research_tracks:
+  - vla-embodied-ai
+- id: 2023-chi-diffusion-policy
+  title: 'Diffusion Policy: Visuomotor Policy Learning via Action Diffusion'
+  title_zh: Diffusion Policy：通过动作扩散学习视觉运动策略
+  authors:
+  - Cheng Chi
+  - Siyuan Feng
+  - Yilun Du
+  - Zhenjia Xu
+  - Eric Cousineau
+  - Benjamin Burchfiel
+  - Shuran Song
+  year: 2023
+  venue: 'Robotics: Science and Systems XIX (RSS 2023)'
+  identifiers:
+    doi: 10.15607/RSS.2023.XIX.026
+    arxiv: '2303.04137'
+    source_url: https://roboticsproceedings.org/rss19/p026.html
+  domains:
+  - robotics
+  - embodied artificial intelligence
+  - imitation learning
+  topics:
+  - diffusion policy
+  - visuomotor policy learning
+  - multimodal action distributions
+  - action sequence prediction
+  - receding horizon control
+  - visual conditioning
+  - time-series diffusion transformer
+  - continuous action generation
+  - behavior cloning
+  - continuous-action policy heads
+  task: imitation learning for continuous-action robot manipulation from visual observations
+  method_family: conditional action-sequence DDPM with receding-horizon execution
+  status: verified
+  code_url: https://github.com/real-stanford/diffusion_policy
+  path: papers/2023-chi-diffusion-policy
+  research_tracks:
+  - vla-embodied-ai
+- id: 2023-driess-palme
+  title: 'PaLM-E: An Embodied Multimodal Language Model'
+  title_zh: PaLM-E：一种具身多模态语言模型
+  authors:
+  - Danny Driess
+  - Fei Xia
+  - Mehdi S. M. Sajjadi
+  - Corey Lynch
+  - Aakanksha Chowdhery
+  - Brian Ichter
+  - Ayzaan Wahid
+  - Jonathan Tompson
+  - Quan Vuong
+  - Tianhe Yu
+  - Wenlong Huang
+  - Yevgen Chebotar
+  - Pierre Sermanet
+  - Daniel Duckworth
+  - Sergey Levine
+  - Vincent Vanhoucke
+  - Karol Hausman
+  - Marc Toussaint
+  - Klaus Greff
+  - Andy Zeng
+  - Igor Mordatch
+  - Pete Florence
+  year: 2023
+  venue: Proceedings of the 40th International Conference on Machine Learning (ICML 2023), PMLR 202
+  identifiers:
+    doi: ''
+    arxiv: '2303.03378'
+    source_url: https://proceedings.mlr.press/v202/driess23a.html
+  domains:
+  - robotics
+  - embodied artificial intelligence
+  - multimodal machine learning
+  topics:
+  - embodied multimodal language models
+  - vision-language-robotics co-training
+  - multimodal token injection
+  - grounded reasoning
+  - cross-task transfer
+  - model scaling
+  task: multimodal embodied reasoning, high-level robot planning, visual question answering, and captioning
+  method_family: decoder-only embodied multimodal language model with continuous-observation token injection
+    and textual high-level actions
+  status: verified
+  code_url: ''
+  path: papers/2023-driess-palme
+  research_tracks:
+  - vla-embodied-ai
+- id: 2023-ichter-saycan
+  title: 'Do As I Can, Not As I Say: Grounding Language in Robotic Affordances'
+  title_zh: 别只听我怎么说，要看我能怎么做：用机器人可供性让语言落地
+  authors:
+  - Brian Ichter
+  - Anthony Brohan
+  - Yevgen Chebotar
+  - Chelsea Finn
+  - Karol Hausman
+  - Alexander Herzog
+  - Daniel Ho
+  - Julian Ibarz
+  - Alex Irpan
+  - Eric Jang
+  year: 2023
+  venue: 6th Conference on Robot Learning, PMLR 205
+  identifiers:
+    doi: ''
+    arxiv: '2204.01691'
+    source_url: https://proceedings.mlr.press/v205/ichter23a.html
+    arxiv_url: https://arxiv.org/abs/2204.01691
+  domains:
+  - robotics
+  - embodied-ai
+  topics:
+  - language-grounded-robotics
+  - large-language-model-planning
+  - affordance-grounding
+  - hierarchical-control
+  - long-horizon-manipulation
+  - zero-shot-generalization
+  task: language-conditioned long-horizon mobile manipulation
+  method_family: LLM skill planning with learned affordances
+  status: verified
+  code_url: https://github.com/google-research/google-research/tree/master/saycan
+  path: papers/2023-ichter-saycan
+  research_tracks:
+  - skill-evolution
+  - vla-embodied-ai
+- id: 2023-jiang-vima
+  title: 'VIMA: General Robot Manipulation with Multimodal Prompts'
+  title_zh: VIMA：使用多模态提示的通用机器人操作
+  authors:
+  - Yunfan Jiang
+  - Agrim Gupta
+  - Zichen Zhang
+  - Guanzhi Wang
+  - Yongqiang Dou
+  - Yanjun Chen
+  - Li Fei-Fei
+  - Anima Anandkumar
+  - Yuke Zhu
+  - Linxi Fan
+  year: 2023
+  venue: 40th International Conference on Machine Learning, PMLR 202
+  identifiers:
+    doi: ''
+    arxiv: '2210.03094'
+    source_url: https://proceedings.mlr.press/v202/jiang23b.html
+    arxiv_url: https://arxiv.org/abs/2210.03094
+  domains:
+  - robotics
+  - embodied-ai
+  - multimodal-machine-learning
+  topics:
+  - multimodal-prompting
+  - robot-manipulation
+  - imitation-learning
+  - zero-shot-generalization
+  - transformer-policy
+  - action-tokenization
+  - simulation-benchmark
+  task: multimodal-prompt-conditioned tabletop manipulation
+  method_family: object-centric encoder-decoder Transformer policy
+  status: verified
+  code_url: https://github.com/vimalabs/VIMA
+  path: papers/2023-jiang-vima
+  research_tracks:
+  - vla-embodied-ai
+- id: 2023-liu-libero
+  title: 'LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning'
+  title_zh: LIBERO：面向终身机器人学习的知识迁移基准
+  authors:
+  - Bo Liu
+  - Yifeng Zhu
+  - Chongkai Gao
+  - Yihao Feng
+  - Qiang Liu
+  - Yuke Zhu
+  - Peter Stone
+  year: 2023
+  venue: Advances in Neural Information Processing Systems 36 (NeurIPS 2023), Datasets and Benchmarks
+    Track
+  identifiers:
+    doi: 10.52202/075280-1939
+    arxiv: '2306.03310'
+    source_url: https://arxiv.org/abs/2306.03310
+    proceedings_url: https://proceedings.neurips.cc/paper_files/paper/2023/hash/8c3c666820ea055a77726d66fc7d447f-Abstract-Datasets_and_Benchmarks.html
+  domains:
+  - robot-learning
+  - embodied-ai
+  topics:
+  - lifelong-learning
+  - knowledge-transfer
+  - robot-manipulation
+  - imitation-learning
+  - language-conditioned-policy
+  - vision-language-action
+  - benchmark
+  task: language-conditioned lifelong robot manipulation
+  method_family: procedural benchmark and lifelong imitation learning
+  status: verified
+  code_url: https://github.com/Lifelong-Robot-Learning/LIBERO
+  path: papers/2023-liu-libero
+  research_tracks:
+  - skill-evolution
+  - vla-embodied-ai
+- id: 2023-majumder-clin
+  title: 'CLIN: A Continually Learning Language Agent for Rapid Task Adaptation and Generalization'
+  title_zh: CLIN：用于快速任务适应与泛化的持续学习语言智能体
+  authors:
+  - Bodhisattwa Prasad Majumder
+  - Bhavana Dalvi Mishra
+  - Peter Jansen
+  - Oyvind Tafjord
+  - Niket Tandon
+  - Li Zhang
+  - Chris Callison-Burch
+  - Peter Clark
+  year: 2023
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2310.10134'
+    source_url: https://arxiv.org/abs/2310.10134
+  domains:
+  - natural language processing
+  - autonomous agents
+  topics:
+  - continual learning
+  - language agents
+  - persistent memory
+  - causal abstraction
+  - test-time adaptation
+  - cross-task generalization
+  task: continual adaptation and transfer in text-based environments
+  method_family: non-parametric memory-augmented language agent
+  status: verified
+  code_url: ''
+  path: papers/2023-majumder-clin
+  research_tracks:
+  - memory-evolution
+- id: 2023-walke-bridgedata-v2
+  title: 'BridgeData V2: A Dataset for Robot Learning at Scale'
+  title_zh: BridgeData V2：面向大规模机器人学习的数据集
+  authors:
+  - Homer Rich Walke
+  - Kevin Black
+  - Tony Z. Zhao
+  - Quan Vuong
+  - Chongyi Zheng
+  - Philippe Hansen-Estruch
+  - Andre Wang He
+  - Vivek Myers
+  - Moo Jin Kim
+  - Max Du
+  - Abraham Lee
+  - Kuan Fang
+  - Chelsea Finn
+  - Sergey Levine
+  year: 2023
+  venue: 7th Conference on Robot Learning (CoRL 2023), PMLR 229
+  identifiers:
+    doi: ''
+    arxiv: '2308.12952'
+    source_url: https://proceedings.mlr.press/v229/walke23a.html
+  domains:
+  - robotics
+  - machine-learning
+  - datasets
+  topics:
+  - robotic-manipulation-dataset
+  - multi-task-offline-robot-learning
+  - goal-conditioned-learning
+  - language-conditioned-control
+  - cross-institution-generalization
+  - data-and-model-scaling
+  task: reusable multi-task robotic manipulation learning across environments and institutions
+  method_family: large-scale robot dataset with goal- and language-conditioned offline policy learning
+  status: verified
+  code_url: ''
+  path: papers/2023-walke-bridgedata-v2
+  research_tracks:
+  - vla-embodied-ai
+- id: 2023-wang-voyager
+  title: 'VOYAGER: An Open-Ended Embodied Agent with Large Language Models'
+  title_zh: VOYAGER：基于大型语言模型的开放式具身智能体
+  authors:
+  - Guanzhi Wang
+  - Yuqi Xie
+  - Yunfan Jiang
+  - Ajay Mandlekar
+  - Chaowei Xiao
+  - Yuke Zhu
+  - Linxi Fan
+  - Anima Anandkumar
+  year: 2023
+  venue: arXiv
+  identifiers:
+    doi: ''
+    arxiv: '2305.16291'
+    source_url: https://arxiv.org/abs/2305.16291
+  domains:
+  - embodied-ai
+  - lifelong-learning
+  - large-language-models
+  topics:
+  - open-ended exploration
+  - automatic curriculum
+  - executable-code skill library
+  - skill retrieval and composition
+  - iterative self-verification
+  task: Open-ended embodied lifelong learning in Minecraft
+  method_family: LLM-driven code-generating agent with a persistent external skill library
+  status: verified
+  code_url: ''
+  path: papers/2023-wang-voyager
+  research_tracks:
+  - skill-evolution
+  - memory-evolution
+  - vla-embodied-ai
+- id: 2023-yuan-craft
+  title: 'CRAFT: Customizing LLMs by Creating and Retrieving from Specialized Toolsets'
+  title_zh: CRAFT：通过创建并检索专用工具集来定制大语言模型
+  authors:
+  - Lifan Yuan
+  - Yangyi Chen
+  - Xingyao Wang
+  - Yi R. Fung
+  - Hao Peng
+  - Heng Ji
+  year: 2023
+  venue: International Conference on Learning Representations (ICLR 2024)
+  identifiers:
+    doi: ''
+    arxiv: '2309.17428'
+    source_url: https://arxiv.org/abs/2309.17428
+  domains:
+  - artificial intelligence
+  - natural language processing
+  topics:
+  - large language models
+  - task-specific tool creation
+  - multi-view tool retrieval
+  - reusable code tools
+  - skill acquisition and reuse
+  task: offline task-specific toolset construction and inference-time retrieval
+  method_family: tool-augmented language models
+  status: verified
+  code_url: ''
+  path: papers/2023-yuan-craft
+  research_tracks:
+  - skill-evolution
+  - memory-evolution
+- id: 2023-zhao-expel
+  title: 'ExpeL: LLM Agents Are Experiential Learners'
+  title_zh: ExpeL：大语言模型智能体是经验学习者
+  authors:
+  - Andrew Zhao
+  - Daniel Huang
+  - Quentin Xu
+  - Matthieu Lin
+  - Yong-Jin Liu
+  - Gao Huang
+  year: 2023
+  venue: AAAI 2024
+  identifiers:
+    doi: ''
+    arxiv: '2308.10144'
+    source_url: https://arxiv.org/abs/2308.10144
+  domains:
+  - large-language-model-agents
+  - sequential-decision-making
+  topics:
+  - experiential-learning
+  - non-parametric-memory
+  - trajectory-retrieval
+  - insight-extraction
+  - transfer-learning
+  task: text-based decision making, question answering, and fact verification
+  method_family: memory-augmented prompting with trajectory retrieval and natural-language insights
+  status: verified
+  code_url: https://github.com/LeapLabTHU/ExpeL
+  path: papers/2023-zhao-expel
+  research_tracks:
+  - memory-evolution
+- id: 2023-zitkovich-rt2
+  title: 'RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control'
+  title_zh: RT-2：视觉—语言—动作模型将网络知识迁移到机器人控制
+  authors:
+  - Brianna Zitkovich
+  - Tianhe Yu
+  - Sichun Xu
+  - Peng Xu
+  - Ted Xiao
+  - Fei Xia
+  - Jialin Wu
+  - Paul Wohlhart
+  - Stefan Welker
+  - Ayzaan Wahid
+  - Quan Vuong
+  - Vincent Vanhoucke
+  - Huong Tran
+  - Radu Soricut
+  - Anikait Singh
+  - Jaspiar Singh
+  - Pierre Sermanet
+  - Pannag Sanketi
+  - Grecia Salazar
+  - Michael Ryoo
+  - Krista Reymann
+  - Kanishka Rao
+  - Karl Pertsch
+  - Igor Mordatch
+  - Henryk Michalewski
+  - Yao Lu
+  - Sergey Levine
+  - Tsang-Wei Edward Lee
+  - Lisa Lee
+  - Isabel Leal
+  - Yuheng Kuang
+  - Dmitry Kalashnikov
+  - Ryan Julian
+  - Nikhil Joshi
+  - Alex Irpan
+  - Brian Ichter
+  - Jasmine Hsu
+  - Alexander Herzog
+  - Karol Hausman
+  - Kehang Han
+  - Keerthana Gopalakrishnan
+  - Montse Gonzalez Arenas
+  - Chuyuan Fu
+  - Pete Florence
+  - Chelsea Finn
+  - Avinava Dubey
+  - Danny Driess
+  - Tianli Ding
+  - Krzysztof Choromanski
+  - Xi Chen
+  - Yevgen Chebotar
+  - Justice Carbajal
+  - Noah Brown
+  - Anthony Brohan
+  year: 2023
+  venue: Proceedings of the 7th Conference on Robot Learning (CoRL 2023)
+  identifiers:
+    doi: ''
+    arxiv: '2307.15818'
+    source_url: https://proceedings.mlr.press/v229/zitkovich23a.html
+  domains:
+  - robotics
+  - embodied artificial intelligence
+  - machine learning
+  topics:
+  - vision-language-action models
+  - web-scale vision-language pretraining
+  - action tokenization
+  - co-fine-tuning
+  - language-conditioned robot manipulation
+  - semantic generalization
+  task: language-conditioned end-to-end closed-loop robotic manipulation
+  method_family: pretrained vision-language model co-fine-tuned as a token-autoregressive robot policy
+  status: verified
+  code_url: ''
+  path: papers/2023-zitkovich-rt2
+  research_tracks:
+  - vla-embodied-ai
+- id: 2022-jang-bcz
+  title: 'BC-Z: Zero-Shot Task Generalization with Robotic Imitation Learning'
+  title_zh: BC-Z：基于机器人模仿学习的零样本任务泛化
+  authors:
+  - Eric Jang
+  - Alex Irpan
+  - Mohi Khansari
+  - Daniel Kappler
+  - Frederik Ebert
+  - Corey Lynch
+  - Sergey Levine
+  - Chelsea Finn
+  year: 2022
+  venue: Proceedings of the 5th Conference on Robot Learning (PMLR 164)
+  identifiers:
+    doi: ''
+    arxiv: '2202.02005'
+    source_url: https://proceedings.mlr.press/v164/jang22a.html
+  domains:
+  - robotics
+  - machine-learning
+  topics:
+  - imitation-learning
+  - zero-shot-task-generalization
+  - language-conditioned-robot-control
+  - video-conditioned-imitation
+  - multi-task-manipulation
+  task: unseen vision-based robotic manipulation task generalization
+  method_family: language- and video-conditioned multi-task behavior cloning
+  status: verified
+  code_url: ''
+  path: papers/2022-jang-bcz
+  research_tracks:
+  - vla-embodied-ai
+- id: 2022-mees-calvin
+  title: 'CALVIN: A Benchmark for Language-Conditioned Policy Learning for Long-Horizon Robot Manipulation
+    Tasks'
+  title_zh: CALVIN：面向长时程机器人操作任务的语言条件策略学习基准
+  authors:
+  - Oier Mees
+  - Lukas Hermann
+  - Erick Rosete-Beas
+  - Wolfram Burgard
+  year: 2022
+  venue: IEEE Robotics and Automation Letters
+  identifiers:
+    doi: 10.1109/LRA.2022.3180108
+    arxiv: '2112.03227'
+    source_url: https://doi.org/10.1109/LRA.2022.3180108
+  domains:
+  - robotics
+  - robot learning
+  - vision-language-action
+  topics:
+  - language-conditioned policy learning
+  - long-horizon manipulation
+  - imitation learning
+  - benchmark
+  - simulation
+  task: long-horizon language-conditioned continuous robot manipulation
+  method_family: benchmark with a multi-context imitation-learning baseline
+  status: verified
+  code_url: http://calvin.cs.uni-freiburg.de
+  path: papers/2022-mees-calvin
+  research_tracks:
+  - vla-embodied-ai
+- id: 2022-reed-gato
+  title: A Generalist Agent
+  title_zh: 通才智能体
+  authors:
+  - Scott Reed
+  - Konrad Zolna
+  - Emilio Parisotto
+  - Sergio Gomez Colmenarejo
+  - Alexander Novikov
+  - Gabriel Barth-Maron
+  - Mai Gimenez
+  - Yury Sulsky
+  - Jackie Kay
+  - Jost Tobias Springenberg
+  - Tom Eccles
+  - Jake Bruce
+  - Ali Razavi
+  - Ashley Edwards
+  - Nicolas Heess
+  - Yutian Chen
+  - Raia Hadsell
+  - Oriol Vinyals
+  - Mahyar Bordbar
+  - Nando de Freitas
+  year: 2022
+  venue: Transactions on Machine Learning Research
+  identifiers:
+    doi: ''
+    arxiv: '2205.06175'
+    source_url: https://openreview.net/forum?id=1ikK0kHjvj
+  domains:
+  - multimodal learning
+  - generalist agents
+  - robot learning
+  - sequential decision making
+  topics:
+  - unified token sequence
+  - multi-task learning
+  - multi-embodiment control
+  - transfer learning
+  - real-time robot control
+  task: multimodal multi-task prediction and control across 604 tasks
+  method_family: decoder-only transformer generalist policy
+  status: verified
+  code_url: ''
+  path: papers/2022-reed-gato
+  research_tracks:
+  - vla-embodied-ai
+- id: 2022-shridhar-cliport
+  title: 'CLIPort: What and Where Pathways for Robotic Manipulation'
+  title_zh: CLIPort：机器人操作中的“是什么”与“在哪里”双通路
+  authors:
+  - Mohit Shridhar
+  - Lucas Manuelli
+  - Dieter Fox
+  year: 2022
+  venue: Conference on Robot Learning (CoRL)
+  identifiers:
+    doi: ''
+    arxiv: '2109.12098'
+    source_url: https://proceedings.mlr.press/v164/shridhar22a.html
+  domains:
+  - robotics
+  - embodied-ai
+  - vision-language
+  topics:
+  - language-conditioned manipulation
+  - imitation learning
+  - few-shot generalization
+  - multi-task learning
+  - affordance prediction
+  task: language-conditioned tabletop pick-and-place manipulation
+  method_family: two-stream vision-language imitation learning with Transporter affordances
+  status: verified
+  code_url: https://cliport.github.io/
+  path: papers/2022-shridhar-cliport
+  research_tracks:
+  - vla-embodied-ai

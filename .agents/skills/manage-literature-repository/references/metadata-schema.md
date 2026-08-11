@@ -6,6 +6,12 @@
 - identifiers, publication, research, artifacts
 - workflow, quality, provenance
 
+## Research classification
+
+Use `research.tracks` for stable Obsidian research views. Supported canonical values are
+`skill-evolution`, `memory-evolution`, and `vla-embodied-ai`. A paper may belong to multiple
+tracks. Leave the list empty to use keyword-based classification during Obsidian generation.
+
 ## Identifiers
 
 Store DOI without a resolver URL, arXiv ID with a version only when version-specific, and an authoritative source URL. A verified record needs at least one identifier or source URL.

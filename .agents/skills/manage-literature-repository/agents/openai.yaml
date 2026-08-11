@@ -1,4 +1,4 @@
 interface:
-  display_name: "论文快速阅读与文献库"
-  short_description: "默认30分钟限时完成论文解析、翻译、核验与可追溯归档"
-  default_prompt: "Use $manage-literature-repository to process this paper in fast mode within a 30-minute budget."
+  display_name: "论文快速阅读与 Obsidian 文献库"
+  short_description: "30分钟完成论文阅读、核验、归档与Obsidian更新"
+  default_prompt: "Use $manage-literature-repository to process this paper in fast mode and update the Obsidian literature vault."

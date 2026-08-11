@@ -63,6 +63,9 @@ def test_public_documentation_exists() -> None:
         REPO / "docs" / "USAGE.md",
         REPO / "SECURITY.md",
         REPO / ".github" / "workflows" / "ci.yml",
+        SKILL / "scripts" / "build_obsidian.py",
+        REPO / "00-论文库.md",
+        REPO / "library" / "全部论文.base",
     ):
         assert path.is_file(), f"missing public project file: {path.relative_to(REPO)}"
 

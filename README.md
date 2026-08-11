@@ -12,6 +12,7 @@ Paper Reader 是一个面向 Codex 的可追溯学术文献工作流。它把论
 - 重要结论使用 Paper claim、Reported result、Reader inference 和 Open question 标签；
 - 优先复用缓存和 arXiv HTML，再使用本地 PDF 解析；MinerU 仅作为质量升级；
 - 每篇论文只存一份，通过 metadata 标签生成分类索引；
+- 自动生成 Obsidian 论文主页、研究分类文件夹和 Bases 数据库视图；
 - WSL、Linux 和 Windows 均使用 micromamba 管理环境；
 - 公共模板默认忽略个人 PDF、翻译、笔记和检索记录，降低误上传风险。
 
@@ -36,6 +37,25 @@ micromamba run -n paper-reader python \
 
 Token 会保存在用户目录的 `~/.config/paper-reader/mineru.env`，不会写入仓库。
 
+## 使用 Obsidian 阅读
+
+在 Obsidian 中将项目根目录作为 Vault 打开。入口文件是：
+
+```text
+00-论文库.md
+```
+
+左侧 `library/研究分类/` 按 Skill 自进化、Memory 自进化、VLA 具身智能和其他论文组织。每篇论文目录中的 `paper.md` 集中提供原文 PDF、中文整理和阅读笔记。
+
+手动刷新 Obsidian 页面：
+
+```bash
+micromamba run -n paper-reader python \
+  .agents/skills/manage-literature-repository/scripts/build_obsidian.py --repo .
+```
+
+正常完成论文晋升后运行 `build_index.py` 即可，它会同时更新 Obsidian。
+
 ## 工作产物
 
 每篇新论文在完成后包含：
@@ -47,6 +67,7 @@ Token 会保存在用户目录的 `~/.config/paper-reader/mineru.env`，不会�
 - `translation.zh.md`：带明确范围的中文产物；
 - `notes.md`：带证据位置的分析笔记；
 - `metadata.yaml`：身份、分类、流程和质量信息。
+- `paper.md`：由 metadata 自动生成的 Obsidian 论文主页。
 
 ## 文档
 
@@ -61,9 +82,10 @@ Token 会保存在用户目录的 `~/.config/paper-reader/mineru.env`，不会�
 .codex/                                      Codex MCP 与 Agent 配置
 inbox/                                       搜索请求、候选和待处理论文
 papers/                                      已验证论文
-collections/                                 自动与人工分类
+collections/manual/                          人工维护的阅读清单
 bibliography/                                引用记录
 synthesis/                                   跨论文综合
+library/                                     Obsidian Bases 与研究分类入口
 tests/                                       自动化测试
 ```
 

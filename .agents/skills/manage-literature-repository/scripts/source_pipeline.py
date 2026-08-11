@@ -29,10 +29,30 @@ CORE_HEADING_PATTERN = re.compile(
     flags=re.IGNORECASE,
 )
 
+# PDF-to-Markdown parsers sometimes promote appendix labels or long example
+# trajectories to headings.  Terms such as "results", "experiments", or
+# "workflow" inside those labels should not make them core-section quality
+# gates.
+NON_CORE_HEADING_PATTERN = re.compile(
+    r"^(?:(?i:appendix)\b|[A-Z](?:\.\d+)*\.?\s+"
+    r"(?i:experiment|details|additional|supplementary|implementation|proof|"
+    r"prompts?|datasets?|hyperparameters?|ablations?|case studies?)\b|"
+    r"[B-Z](?:\.\d+)*\.?\s+(?i:methods?|methodology|approach|framework|"
+    r"experiments?|evaluation|benchmarks?|extended\s+results?|results?|discussion|"
+    r"conclusions?|limitations?)\b)",
+)
+
 NUMBERED_HEADING_PATTERN = re.compile(
     r"^(?P<number>\d+(?:\.\d+)*|[A-Z](?:\.\d+)+)\b",
     flags=re.IGNORECASE,
 )
+
+BACK_MATTER_BOUNDARY_PATTERN = re.compile(
+    r"^(?:references?|appendix|supplementary(?:\s+material)?)\b",
+    flags=re.IGNORECASE,
+)
+
+LETTERED_HEADING_PATTERN = re.compile(r"^[A-Z](?:\.\d+)*\.?\s+", flags=re.IGNORECASE)
 
 
 def heading_title(match: re.Match[str]) -> str:
@@ -87,9 +107,16 @@ def evaluate_source(markdown: str, page_count: int | None = None) -> SourceQuali
         issues.append("source text does not contain a substantial natural-language passage")
 
     heading_matches = list(HEADING_PATTERN.finditer(stripped))
+    in_back_matter = False
     for index, match in enumerate(heading_matches):
         normalized_title = heading_title(match)
+        if BACK_MATTER_BOUNDARY_PATTERN.search(normalized_title):
+            in_back_matter = True
         if not CORE_HEADING_PATTERN.search(normalized_title):
+            continue
+        if in_back_matter and LETTERED_HEADING_PATTERN.search(normalized_title):
+            continue
+        if NON_CORE_HEADING_PATTERN.search(normalized_title) or len(normalized_title) > 180:
             continue
         current_level = heading_level(match)
         end = len(stripped)

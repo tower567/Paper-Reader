@@ -93,6 +93,8 @@ micromamba run -n paper-reader python \
   .agents/skills/manage-literature-repository/scripts/build_index.py --repo .
 ```
 
+`build_index.py` 会同时刷新 `paper.md`、`00-论文库.md`、研究分类文件夹和 Bases。
+
 ## 4. 文献检索流程
 
 创建搜索任务：
@@ -119,8 +121,9 @@ micromamba run -n paper-reader python \
 
 ## 6. 分类与综合
 
+- 优先在 `metadata.yaml` 的 `research.tracks` 中使用 `skill-evolution`、`memory-evolution`、`vla-embodied-ai`；
+- 一篇论文可以属于多个 track；留空时由 Obsidian 构建脚本根据标题、领域和主题自动分类；
 - 在 metadata.yaml 的 `domains` 和 `topics` 中添加标签；
-- `build_index.py` 自动生成 `collections/generated/`；
 - `collections/manual/` 用于人工阅读清单；
 - bibliography 与 synthesis 只使用已验证论文；
 - 快速模式下建议批量更新跨论文综合，而不是每篇都扩写。
@@ -128,3 +131,22 @@ micromamba run -n paper-reader python \
 ## 7. 数据保护
 
 个人成果可保存在 `.local/` 或其他私有目录。共享项目前，应移除论文、候选报告和搜索记录，并确认 PDF、翻译和图表的再分发许可。
+
+## 8. 使用 Obsidian 文献库
+
+在 Obsidian 中打开项目根目录，并进入 `00-论文库.md`。主要入口包括：
+
+- `library/全部论文.base`：全部论文数据库；
+- `library/研究分类/Skill 自进化/`；
+- `library/研究分类/Memory 自进化/`；
+- `library/研究分类/VLA 具身智能/`；
+- 每篇论文目录中的 `paper.md`。
+
+单独刷新 Obsidian 产物：
+
+```bash
+micromamba run -n paper-reader python \
+  .agents/skills/manage-literature-repository/scripts/build_obsidian.py --repo .
+```
+
+`paper.md` 是自动生成文件。需要修改论文内容或分类时，应编辑 `metadata.yaml`、`translation.zh.md` 或 `notes.md`，然后重新构建。

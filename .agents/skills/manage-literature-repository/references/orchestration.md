@@ -18,6 +18,6 @@ In fast mode, verify metadata, the abstract translation, and up to 6 major claim
 
 ## Global writes
 
-Run promotion and index generation sequentially. Only the coordinator modifies index.yaml, collections/generated, bibliography, and synthesis.
+Run promotion and index generation sequentially. Only the coordinator modifies index.yaml, bibliography, and synthesis.
 
 Batch bibliography cleanup and synthesis after several papers or when the user asks; do not spend the final minutes of every fast-paper run expanding global prose.

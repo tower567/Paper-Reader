@@ -130,6 +130,21 @@ def test_fast_plan_can_include_focused_appendix(tmp_path: Path) -> None:
     assert "A.2 Ablation Details" in titles
 
 
+def test_fast_plan_can_use_exact_coordinator_section_order(tmp_path: Path) -> None:
+    paper = make_paper(tmp_path)
+    plan = create_plan(paper, "fast", section_indexes=[2, 5, 10])
+
+    assert [item["index"] for item in plan["selected_sections"]] == [2, 5, 10]
+    assert plan["selected_section_count"] == 3
+    assert all(
+        item["reason"].startswith("coordinator-curated")
+        for item in plan["selected_sections"]
+    )
+    pack = (paper / "reading-pack.md").read_text(encoding="utf-8")
+    assert pack.index("Abstract evidence") < pack.index("Method evidence")
+    assert "Ablation evidence" in pack
+
+
 def test_init_paper_defaults_to_fast_structured_summary(tmp_path: Path) -> None:
     repo = tmp_path / "repo"
     (repo / ".agents" / "skills" / "manage-literature-repository").mkdir(

@@ -1,0 +1,36 @@
+filters:
+  and:
+    - file.hasTag("paper")
+    - file.hasTag("research/memory-evolution")
+formulas:
+  paper_link: file.asLink(display_title)
+properties:
+  formula.paper_link:
+    displayName: 论文
+  note.year:
+    displayName: 年份
+  note.venue:
+    displayName: 会议/期刊
+  note.research_tracks:
+    displayName: 研究方向
+  note.status:
+    displayName: 状态
+  note.reproducibility:
+    displayName: 复现性
+views:
+  - type: table
+    name: Memory 自进化
+    order:
+      - formula.paper_link
+      - year
+      - venue
+      - research_tracks
+      - status
+      - reproducibility
+    columnSize:
+      formula.paper_link: 420
+      note.year: 75
+      note.venue: 180
+      note.research_tracks: 180
+      note.status: 95
+      note.reproducibility: 90

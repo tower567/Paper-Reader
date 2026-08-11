@@ -1,6 +1,6 @@
 ---
 name: manage-literature-repository
-description: Search, screen, download, parse, time-box, translate, read, verify, classify, and synthesize academic papers in a structured literature repository. Use for literature research, arXiv discovery, fast paper ingestion with a default 30-minute reading budget, HTML/local/MinerU parsing, bounded reading packs that omit unnecessary figures and tables, Chinese structured translations, evidence-linked notes, baseline selection, research gaps, and repository indexes.
+description: Search, screen, download, parse, time-box, translate, read, verify, classify, synthesize, and publish academic papers into a structured Markdown and Obsidian literature repository. Use for literature research, arXiv discovery, fast paper ingestion with a default 30-minute reading budget, HTML/local/MinerU parsing, bounded reading packs, Chinese structured translations, evidence-linked notes, Obsidian paper pages and Bases, baseline selection, research gaps, and repository indexes.
 ---
 
 # Manage Literature Repository
@@ -11,10 +11,11 @@ description: Search, screen, download, parse, time-box, translate, read, verify,
 - Default to `fast` mode and target 30 minutes for an ordinary machine-readable paper.
 - Store every paper once and preserve original.pdf without modification.
 - Require source.md, parse.yaml, source-sections/manifest.yaml, reading-plan.yaml, reading-pack.md, translation.zh.md, notes.md, and metadata.yaml for new records.
-- Classify papers through metadata and generated collections; never duplicate a PDF.
+- Classify papers through metadata-backed Obsidian views; never duplicate a PDF.
+- Treat metadata.yaml as the source of truth and generate Obsidian paper.md pages and Bases from it.
 - Read reading-pack.md only. Open a source section or PDF page only to resolve a specific gap.
 - Label Paper claim, Reported result, Reader inference, and Open question separately.
-- Let only the coordinator update index.yaml, collections/generated, bibliography, and synthesis files.
+- Let only the coordinator update index.yaml, bibliography, and synthesis files.
 
 ## Choose a mode
 
@@ -41,7 +42,7 @@ Use `deep` only when the user requests full translation or exhaustive verificati
 5. Read only reading-pack.md. Do not preload source.md, the full PDF, source-assets, or omitted sections.
 6. Write translation.zh.md and notes.md within references/reading-protocol.md and references/translation-rules.md limits.
 7. Perform targeted verification sequentially. Start a separate evidence-verifier only for deep mode, high-stakes claims, or unresolved discrepancies.
-8. Run strict validation, promote, and rebuild the index. Do not perform open-ended synthesis unless requested.
+8. Run strict validation, promote, and rebuild the index. Index generation also refreshes Obsidian paper pages, research folders, and Bases. Do not perform open-ended synthesis unless requested.
 
 Use this time allocation as a hard prioritization rule:
 
@@ -77,6 +78,7 @@ If parsing alone exceeds 8 minutes, finish or cache parsing, report that the pap
 - translation.zh.md: Chinese output with explicit scope.
 - notes.md: concise analytical notes and evidence index.
 - metadata.yaml: identity, classification, mode, provenance, and quality flags.
+- paper.md: generated Obsidian landing page after promotion; edit metadata, translation, or notes instead of this file.
 
 ## Quality gates
 
@@ -114,3 +116,6 @@ Read references/parsing-protocol.md for source preparation, references/reading-p
 
     micromamba run -n paper-reader python \
       .agents/skills/manage-literature-repository/scripts/build_index.py --repo .
+
+    micromamba run -n paper-reader python \
+      .agents/skills/manage-literature-repository/scripts/build_obsidian.py --repo .

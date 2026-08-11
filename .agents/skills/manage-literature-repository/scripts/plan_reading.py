@@ -92,6 +92,13 @@ def parse_args() -> argparse.Namespace:
         default=[],
         help="Repeat for a heading keyword that should receive priority.",
     )
+    parser.add_argument(
+        "--section-index",
+        action="append",
+        type=int,
+        default=[],
+        help="Repeat to select an exact one-based manifest section in the given read order.",
+    )
     parser.add_argument("--dry-run", action="store_true")
     return parser.parse_args()
 
@@ -216,6 +223,36 @@ def select_sections(
     return [selected[index] for index in sorted(selected)]
 
 
+def select_sections_by_index(
+    candidates: list[dict[str, Any]],
+    indexes: list[int],
+    max_sections: int,
+    max_characters: int,
+) -> list[dict[str, Any]]:
+    if len(indexes) > max_sections:
+        raise SystemExit(
+            f"Explicit selection has {len(indexes)} sections, exceeding limit {max_sections}"
+        )
+    lookup = {int(item["index"]): item for item in candidates}
+    selected: list[dict[str, Any]] = []
+    seen: set[int] = set()
+    planned_total = 0
+    for index in indexes:
+        if index in seen:
+            raise SystemExit(f"Duplicate explicit section index: {index}")
+        item = lookup.get(index)
+        if item is None:
+            raise SystemExit(f"Unknown explicit section index: {index}")
+        planned_total += int(item["planned_characters"])
+        if planned_total > max_characters:
+            raise SystemExit(
+                f"Explicit selection exceeds character limit {max_characters}"
+            )
+        selected.append(item)
+        seen.add(index)
+    return selected
+
+
 def truncate_section(text: str, limit: int) -> tuple[str, bool]:
     if len(text) <= limit:
         return text, False
@@ -332,6 +369,7 @@ def create_plan(
     mode: str,
     research_question: str = "",
     focuses: list[str] | None = None,
+    section_indexes: list[int] | None = None,
     overrides: dict[str, int | None] | None = None,
     dry_run: bool = False,
 ) -> dict[str, Any]:
@@ -357,11 +395,19 @@ def create_plan(
         terms,
         int(limits["max_characters_per_section"]),
     )
-    selected = select_sections(
-        candidates,
-        int(limits["max_sections"]),
-        int(limits["max_characters"]),
-    )
+    if section_indexes:
+        selected = select_sections_by_index(
+            candidates,
+            section_indexes,
+            int(limits["max_sections"]),
+            int(limits["max_characters"]),
+        )
+    else:
+        selected = select_sections(
+            candidates,
+            int(limits["max_sections"]),
+            int(limits["max_characters"]),
+        )
     if not selected:
         raise SystemExit("No readable sections were selected")
 
@@ -369,7 +415,9 @@ def create_plan(
     selected_records = []
     for read_order, item in enumerate(selected, start=1):
         reason = f"core role: {item['role']}"
-        if item["focus_match"]:
+        if section_indexes:
+            reason = "coordinator-curated core section for the focused research question"
+        elif item["focus_match"]:
             reason += "; matched research focus"
         selected_records.append(
             {
@@ -452,6 +500,7 @@ def main() -> int:
         mode,
         research_question=args.research_question,
         focuses=args.focus,
+        section_indexes=args.section_index,
         overrides={
             "time_budget_minutes": args.time_budget_minutes,
             "max_sections": args.max_sections,

@@ -12,7 +12,7 @@
 - Use structured-summary Chinese output by default; use core-sections or full translation only in deep mode or when explicitly requested.
 - For one fast paper, avoid reader/verifier handoffs; verify metadata, the abstract, and at most 6 major claims sequentially.
 - Scouts write only candidate reports. Readers write only their assigned inbox/papers/<paper-id>. Verifiers report without editing.
-- Only the coordinator modifies index.yaml, collections/generated, bibliography, and synthesis.
+- Only the coordinator modifies index.yaml, bibliography, and synthesis.
 - Do not cite an unverified paper as evidence for novelty, research gaps, or baseline selection.
 - Run strict validation before promotion and rebuild generated indexes afterward.
 - Batch bibliography cleanup and synthesis instead of expanding them after every fast-paper run.

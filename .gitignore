@@ -25,5 +25,12 @@ inbox/candidates/*
 !inbox/candidates/.gitkeep
 inbox/search-requests/*
 !inbox/search-requests/.gitkeep
+inbox/downloads/*
+!inbox/downloads/.gitkeep
 logs/search-history/*
 !logs/search-history/.gitkeep
+
+# Obsidian machine-specific workspace state.
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/

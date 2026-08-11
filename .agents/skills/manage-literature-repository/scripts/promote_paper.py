@@ -55,7 +55,7 @@ def main() -> int:
     target.parent.mkdir(parents=True, exist_ok=True)
     shutil.move(str(source), str(target))
     print(target)
-    print("Run build_index.py to refresh index.yaml and generated collections.")
+    print("Run build_index.py to refresh index.yaml and Obsidian views.")
     return 0
 
 
