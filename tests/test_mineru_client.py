@@ -93,7 +93,8 @@ def test_mineru_signed_upload_poll_and_download(tmp_path: Path) -> None:
 def test_user_level_token_configuration_and_loading(tmp_path: Path) -> None:
     config_path, bashrc_path = install_token("test-token-value", tmp_path)
 
-    assert config_path.stat().st_mode & 0o777 == 0o600
+    if os.name != "nt":
+        assert config_path.stat().st_mode & 0o777 == 0o600
     assert "Paper Reader MinerU" in bashrc_path.read_text(encoding="utf-8")
     settings = load_user_settings(config_path)
     assert settings["MINERU_API_TOKEN"] == "test-token-value"
@@ -107,4 +108,5 @@ def test_user_level_token_configuration_and_loading(tmp_path: Path) -> None:
 
     install_token("replacement-token", tmp_path)
     assert bashrc_path.read_text(encoding="utf-8").count("Paper Reader MinerU >>>") == 1
-    assert os.stat(config_path).st_mode & 0o777 == 0o600
+    if os.name != "nt":
+        assert os.stat(config_path).st_mode & 0o777 == 0o600
