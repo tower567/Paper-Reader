@@ -47,6 +47,8 @@ Token 会保存在用户目录的 `~/.config/paper-reader/mineru.env`，不会�
 
 左侧 `library/研究分类/` 按 Skill 自进化、Memory 自进化、VLA 具身智能和其他论文组织。每篇论文目录中的 `paper.md` 集中提供原文 PDF、中文整理和阅读笔记。
 
+在 Bases 表格的“已读”列勾选论文后，标题会显示 `✅` 标记；该状态在重新构建 Obsidian 页面时会自动保留。
+
 手动刷新 Obsidian 页面：
 
 ```bash

@@ -15,6 +15,12 @@ dist/
 Thumbs.db
 *.tmp
 *.swp
+tmp/
+
+# Local Obsidian/Claudian extensions and session state.
+.claudian/
+.obsidian/plugins/
+.obsidian/community-plugins.json
 
 # Public-template safety: keep personal literature out of Git by default.
 papers/*

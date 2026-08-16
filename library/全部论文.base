@@ -2,10 +2,12 @@ filters:
   and:
   - file.hasTag("paper")
 formulas:
-  paper_link: file.asLink(display_title)
+  paper_link: if(read, file.asLink("✅ " + display_title), file.asLink(display_title))
 properties:
   formula.paper_link:
     displayName: 论文
+  note.read:
+    displayName: 已读
   note.year:
     displayName: 年份
   note.venue:
@@ -20,6 +22,7 @@ views:
 - type: table
   name: 全部论文
   order:
+  - note.read
   - formula.paper_link
   - note.year
   - note.venue
@@ -27,6 +30,7 @@ views:
   - note.status
   - note.reproducibility
   columnSize:
+    note.read: 58
     formula.paper_link: 420
     note.year: 75
     note.venue: 180

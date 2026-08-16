@@ -142,6 +142,8 @@ micromamba run -n paper-reader python \
 - `library/研究分类/VLA 具身智能/`；
 - 每篇论文目录中的 `paper.md`。
 
+在任意论文 Bases 表格中点击“已读”复选框，即可标记阅读状态。已读论文标题会显示 `✅`，重新运行构建脚本不会清除该状态。
+
 单独刷新 Obsidian 产物：
 
 ```bash

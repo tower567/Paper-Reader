@@ -101,6 +101,7 @@ def test_build_vault_generates_paper_page_bases_and_research_folders(
     page = (paper / "paper.md").read_text(encoding="utf-8")
     frontmatter = yaml.safe_load(page.split("---", 2)[1])
     assert frontmatter["display_title"] == "示例技能记忆论文"
+    assert frontmatter["read"] is False
     assert frontmatter["research_tracks"] == ["Skill 自进化", "Memory 自进化"]
     assert "research/skill-evolution" in frontmatter["tags"]
     assert "![[papers/2026-example/original.pdf#height=850]]" in page
@@ -108,6 +109,14 @@ def test_build_vault_generates_paper_page_bases_and_research_folders(
 
     all_base = yaml.safe_load((tmp_path / "library" / "全部论文.base").read_text())
     assert 'file.hasTag("paper")' in all_base["filters"]["and"]
+    assert "note.read" in all_base["views"][0]["order"]
+    assert "✅ " in all_base["formulas"]["paper_link"]
+
+    page_path = paper / "paper.md"
+    page_path.write_text(page.replace("read: false", "read: true"), encoding="utf-8")
+    build_vault(tmp_path, [record])
+    rebuilt = yaml.safe_load(page_path.read_text(encoding="utf-8").split("---", 2)[1])
+    assert rebuilt["read"] is True
     skill_base = yaml.safe_load(
         (tmp_path / "library" / "研究分类" / "Skill 自进化" / "论文.base").read_text()
     )
